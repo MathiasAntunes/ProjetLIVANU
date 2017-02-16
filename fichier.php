@@ -13,7 +13,7 @@ flush();
 $arrayUser[] = $_SESSION['tabRep'];
 //$arrayUser[] = array($_SESSION['score']);
 //}
-$fp = fopen('C:\wamp\www\ProjetAnnuelM1\truc1.csv', 'a');
+$fp = fopen('truc1.csv', 'a');
 
 foreach($arrayUser as $user)
 {
