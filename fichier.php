@@ -17,7 +17,7 @@ $fp = fopen('truc1.csv', 'a');
 
 foreach($arrayUser as $user)
 {
-	fputcsv($fp, $user,',',',',',');
+	fputcsv($fp, $user,',');
 }
 
 fclose($fp);
