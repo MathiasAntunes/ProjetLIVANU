@@ -12,7 +12,7 @@
 		?>
 		Pret à commencer ?
 		<form id="formulaire" action="truc2.php" method = "post">
-			<input type="submit" value="C'est parti !" name = "Go"/>
+			<input class="btn type="submit" value="C'est parti !" name = "Go"/>
 		</form>
 	</body>
 </html>
