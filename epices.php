@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-			<title>Test question</title>
+			<title>EPICES</title>
 	</head>
 	<body>
 		<?php 
@@ -237,7 +237,7 @@
 		
 		Merci d'avoir répondu ! <br>
 		<?php 
-			$_SESSION['tabRep'][] = $_SESSION['score'];
+			$_SESSION['tabRep'][11] = $_SESSION['score'];
 			print_r ($_SESSION['tabRep']);
 		?>
 		<form id="formulaire" action="truc.php" method = "post">
