@@ -21,7 +21,7 @@
 			
 		?>
 		<?php 
-			if (isset($_POST['Go'])) {				// si le bouton de départ a été pressé
+			if (isset($_POST['Go']) and ($_POST['selection'] == "epices")) {				// si le bouton de départ a été pressé
 				$_SESSION['score'] = 75.14;
 		?>
 		Question 1 :
