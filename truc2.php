@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="UTF-8"/>
 			<title>Test question</title>
+		<link href="//cdn.muicss.com/mui-0.9.9/css/mui.min.css" rel="stylesheet" type="text/css" />
+		<script src="//cdn.muicss.com/mui-0.9.9/js/mui.min.js"></script>
 	</head>
 	<body>
 		<?php 
@@ -21,7 +23,7 @@
 			
 		?>
 		<?php 
-			if (isset($_POST['Go']) and ($_POST['selection'] == "epices")) {				// si le bouton de départ a été pressé
+			if (isset($_POST['Go']) and ($_POST['selection'] == "epices")) {// si le bouton de départ a été pressé
 				$_SESSION['score'] = 75.14;
 		?>
 		Question 1 :
