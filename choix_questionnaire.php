@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8"/>
 			<title>Test question</title>
+		<link href="//cdn.muicss.com/mui-0.9.9/css/mui.min.css" rel="stylesheet" type="text/css" />
 	</head>
 	<body>
 		<form id="formulaire" action="truc2.php" method = "post">

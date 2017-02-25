@@ -4,7 +4,7 @@
 		<meta charset="UTF-8"/>
 			<title>Test question</title>
 		<link href="//cdn.muicss.com/mui-0.9.9/css/mui.min.css" rel="stylesheet" type="text/css" />
-		<script src="//cdn.muicss.com/mui-0.9.9/js/mui.min.js"></script>
+		<!-- <script src="//cdn.muicss.com/mui-0.9.9/js/mui.min.js"></script> -->
 	</head>
 	<body>
 		<?php 
