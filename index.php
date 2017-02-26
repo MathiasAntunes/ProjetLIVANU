@@ -14,8 +14,8 @@
     	</tr>
   		</table>
 	</div>
-	<table width="100%" height="100%" >
-		<tr style="height:33%;">
+	<table width="100%" height="77%" >
+		<tr style="height:50%;">
 			<td align="center" class="mui--text-display3">
 				<?php 
 				$_SESSION['tabRep'] = array();

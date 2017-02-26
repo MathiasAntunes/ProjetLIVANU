@@ -8,8 +8,25 @@
 	<div class="mui-appbar">
 		<table width="100%">
    		<tr style="vertical-align:middle;">
-      		<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Projet LIVANU</td>
+   			<?php 
+			if ($_POST['selection'] == "epices") {
+			?>
+      			<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire 1</td>
+    		<?php 
+			}
+			if ($_POST['selection'] == "SF-32") {
+			?>
+      			<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire 2</td>
+    		<?php 
+			}
+			if ($_POST['selection'] == "Alimentation") {
+			?>
+      			<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire 3</td>
+    		<?php 
+			}	
+			?>
     	</tr>
+
   		</table>
 	</div>
 	<body>
@@ -26,24 +43,36 @@
 			$ques10 = "En cas de difficultés, y-a-t’il dans votre entourage des personnes sur qui vous puissiez compter pour vous héberger quelques jours en cas de besoin ?";
 			$ques11 = "En cas de difficultés, y-a-t’il dans votre entourage des personnes sur qui vous puissiez compter pour vous apporter une aide matérielle ?";
 			$tabQues = array ($ques, $ques2, $ques3, $ques4, $ques5, $ques6, $ques7, $ques8, $ques9, $ques10, $ques11);		
-			
+		
 		?>
+		<div align="center">
 		<?php 
 			if ($_POST['selection'] == "epices") {// si le bouton de départ a été pressé
 				$_SESSION['score'] = 75.14;
 		?>
-		<div align="center" class="mui--text-display3">
+		<div class="mui--text-display2">
+		<br>
+		<br>
 		Question 1 :
 
 		<?php
 			echo "{$tabQues[0]}"; 
 		?>
 		</div>
+		<br>
+		<br>
+		<br>
+		<br>
 		<form id="formulaire" action="truc2.php" method = "post">
-			<div>
-			<label align="center" class="mui--text-display3" for "Nom"> Réponse : </label>
-			<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui1"/>
-			<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non1"/>
+			<div align="center">
+				<div>
+					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+				</div>
+				<br>
+				<div>
+				<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui1"/>
+				<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non1"/>
+				</div>
 		</form>
 		
 		
@@ -260,5 +289,6 @@
 		<?php 
 			}
 		?>
+	</div>
 	</body>
 </html>
