@@ -2,21 +2,20 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-			<title>Test question</title>
+			<title>Projet LIVANU</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css" />
-		<!-- <script src="//cdn.muicss.com/mui-0.9.9/js/mui.min.js"></script> -->
 	</head>
 					 <!--faire un deuxième fichier dans celui là juste laisser la décla de tabRep dans l'autre faire les conditions et le remplissage de tab rep-->
 	<body>
 	<div class="mui-appbar">
-		<table width="100%">
+		<table width="100%" height="110px">
    		<tr style="vertical-align:middle;">
-      		<td class="mui--appbar-height mui--text-light" align="center">Projet LIVANU</td>
+      		<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Projet LIVANU</td>
     	</tr>
   		</table>
 	</div>
-	<table width="100%" >
-		<tr style="height:250px;">
+	<table width="100%" height="100%" >
+		<tr style="height:33%;">
 			<td align="center" class="mui--text-display3">
 				<?php 
 				$_SESSION['tabRep'] = array();
@@ -24,13 +23,17 @@
 				Pret à commencer ?
 			</td>
 		</tr>
-		<tr style="height:250px;">
+		<tr style="height:50%;">
 			<td align="center">
-				<form id="formulaire" action="choix_questionnaire.php" method = "post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="C'est parti !" name = "Bouttonmenu"/>
-				</form>
+				<a href="choix_questionnaire.php" class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary">C'est parti !
+				</a>
 			</td>
 		</tr>	
 	</table>
+	<footer>
+		<div class="mui--text-center">
+			Made with ♥ by Mathias, Jonathan et Pierre
+  		</div>
+	</footer>
 	<body>
 </html>

@@ -519,10 +519,19 @@ h4, h5, h6 {
 }
 
 /**
+ * Footer CSS
+ */
+footer {
+  height: 25px;
+  background-color: #eee;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 8px;
+}
+/**
  * MUI Appbar
  */
 .mui--appbar-height {
-  height: 56px;
+  height: 112px;
 }
 
 .mui--appbar-min-height, .mui-appbar {
@@ -575,6 +584,8 @@ h4, h5, h6 {
 /**
  * MUI Buttons
  */
+
+
 .mui-btn {
   font-weight: 500;
   font-size: 14px;

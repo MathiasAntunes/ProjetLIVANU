@@ -2,10 +2,16 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-			<title>Test question</title>
+			<title>Projet LIVANU</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css" />
-		<!-- <script src="//cdn.muicss.com/mui-0.9.9/js/mui.min.js"></script> -->
 	</head>
+	<div class="mui-appbar">
+		<table width="100%">
+   		<tr style="vertical-align:middle;">
+      		<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Projet LIVANU</td>
+    	</tr>
+  		</table>
+	</div>
 	<body>
 		<?php 
 			$ques = "Rencontrez-vous parfois un travailleur social ?"; 
@@ -23,18 +29,21 @@
 			
 		?>
 		<?php 
-			if (isset($_POST['Go']) and ($_POST['selection'] == "epices")) {// si le bouton de départ a été pressé
+			if ($_POST['selection'] == "epices") {// si le bouton de départ a été pressé
 				$_SESSION['score'] = 75.14;
 		?>
+		<div align="center" class="mui--text-display3">
 		Question 1 :
+
 		<?php
 			echo "{$tabQues[0]}"; 
 		?>
+		</div>
 		<form id="formulaire" action="truc2.php" method = "post">
 			<div>
-			<label for "Nom"> Réponse : </label>
-			<input type="submit" value="Oui" name = "Oui1"/>
-			<input type="submit" value="Non" name="Non1"/>
+			<label align="center" class="mui--text-display3" for "Nom"> Réponse : </label>
+			<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui1"/>
+			<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non1"/>
 		</form>
 		
 		
@@ -242,7 +251,7 @@
 			$_SESSION['tabRep'][] = $_SESSION['score'];
 			print_r ($_SESSION['tabRep']);
 		?>
-		<form id="formulaire" action="truc.php" method = "post">
+		<form id="formulaire" action="index.php" method = "post">
 			<input type="submit" value="Retour au début" name="Return"/>
 		</form>
 		<form id="formulaire" action="fichier.php" method = "post">
