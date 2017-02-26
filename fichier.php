@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <?php
 
-header('Location: choix_questionnaire.php'); //a voir si on renvoi vers cette page
+header('Location: accueil.php'); //a voir si on renvoi vers cette page
 flush();
 
 

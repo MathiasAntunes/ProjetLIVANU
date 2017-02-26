@@ -9,30 +9,13 @@
 		<link rel="stylesheet" type="text/css" href="CSS.css" />
 >>>>>>> origin/master:truc2.php
 	</head>
-	<div class="mui-appbar">
-		<table width="100%">
-   		<tr style="vertical-align:middle;">
-   			<?php 
-			if ($_POST['selection'] == "epices") {
-			?>
-      			<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire 1</td>
-    		<?php 
-			}
-			if ($_POST['selection'] == "SF-32") {
-			?>
-      			<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire 2</td>
-    		<?php 
-			}
-			if ($_POST['selection'] == "Alimentation") {
-			?>
-      			<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire 3</td>
-    		<?php 
-			}	
-			?>
-    	</tr>
-
-  		</table>
-	</div>
+		<div class="mui-appbar">
+			<table width="100%">
+				<tr style="vertical-align:middle;">
+					<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire EPICES</td>
+				</tr>
+			</table>
+		</div>			
 	<body>
 		<?php 
 			$ques = "Rencontrez-vous parfois un travailleur social ?"; 
@@ -50,10 +33,10 @@
 		
 		?>
 		<div align="center">
-		<?php 
-			if ($_POST['selection'] == "epices") {// si le bouton de départ a été pressé
-				$_SESSION['score'] = 75.14;
-		?>
+			<?php 
+				if (!isset($_POST['validation'])) {// si le bouton de départ a été pressé
+					$_SESSION['score'] = 75.14;
+			?>
 		<div class="mui--text-display2">
 		<br>
 		<br>
@@ -63,27 +46,24 @@
 			echo "{$tabQues[0]}"; 
 		?>
 <<<<<<< HEAD:epices.php
-		<form id="formulaire" action="epices.php" method = "post">
-			<div>
-			<label for "Nom"> Réponse : </label>
-			<input type="submit" value="Oui" name = "Oui1"/>
-			<input type="submit" value="Non" name="Non1"/>
 =======
 		</div>
 		<br>
 		<br>
 		<br>
 		<br>
-		<form id="formulaire" action="truc2.php" method = "post">
+		<form id="formulaire" action="epices.php" method = "post">
 			<div align="center">
 				<div>
 					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
 				</div>
 				<br>
 				<div>
-				<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui1"/>
-				<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non1"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui1"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non1"/>
 				</div>
+			</div>
 >>>>>>> origin/master:truc2.php
 		</form>
 		
@@ -103,6 +83,7 @@
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui2"/>
+			<input type="hidden" name="validation" value="ok">
 			<input type="submit" value="Non" name="Non2"/>
 		</form>
 		
@@ -122,6 +103,7 @@
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui3"/>
+			<input type="hidden" name="validation" value="ok">
 			<input type="submit" value="Non" name="Non3"/>
 		</form>
 		
@@ -141,6 +123,7 @@
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui4"/>
+			<input type="hidden" name="validation" value="ok">
 			<input type="submit" value="Non" name="Non4"/>
 		</form>
 		
@@ -160,6 +143,7 @@
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui5"/>
+			<input type="hidden" name="validation" value="ok">
 			<input type="submit" value="Non" name="Non5"/>
 		</form>
 		
@@ -179,6 +163,7 @@
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui6"/>
+			<input type="hidden" name="validation" value="ok">
 			<input type="submit" value="Non" name="Non6"/>
 		</form>
 		
@@ -198,6 +183,7 @@
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui7"/>
+			<input type="hidden" name="validation" value="ok">
 			<input type="submit" value="Non" name="Non7"/>
 		</form>
 		
@@ -217,6 +203,7 @@
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui8"/>
+			<input type="hidden" name="validation" value="ok">
 			<input type="submit" value="Non" name="Non8"/>
 		</form>
 		
@@ -236,6 +223,7 @@
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui9"/>
+			<input type="hidden" name="validation" value="ok">
 			<input type="submit" value="Non" name="Non9"/>
 		</form>
 		
@@ -255,6 +243,7 @@
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui10"/>
+			<input type="hidden" name="validation" value="ok">
 			<input type="submit" value="Non" name="Non10"/>
 		</form>
 		
@@ -274,6 +263,7 @@
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui11"/>
+			<input type="hidden" name="validation" value="ok">
 			<input type="submit" value="Non" name="Non11"/>
 		</form>
 		<?php
