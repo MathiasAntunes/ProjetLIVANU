@@ -28,7 +28,7 @@
 		<?php
 			echo "{$tabQues[0]}"; 
 		?>
-		<form id="formulaire" action="truc2.php" method = "post">
+		<form id="formulaire" action="epices.php" method = "post">
 			<div>
 			<label for "Nom"> Réponse : </label>
 			<input type="submit" value="Oui" name = "Oui1"/>
@@ -47,7 +47,7 @@
 		?>
 		Question 2 : 
 		<?php echo "{$tabQues[1]}"; ?>
-		<form id="formulaire" action="truc2.php" method = "post">
+		<form id="formulaire" action="epices.php" method = "post">
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui2"/>
@@ -66,7 +66,7 @@
 		?>
 		Question 3 : 
 		<?php echo "{$tabQues[2]}"; ?>
-		<form id="formulaire" action="truc2.php" method = "post">
+		<form id="formulaire" action="epices.php" method = "post">
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui3"/>
@@ -85,7 +85,7 @@
 		?>
 		Question 4 : 
 		<?php echo "{$tabQues[3]}"; ?>
-		<form id="formulaire" action="truc2.php" method = "post">
+		<form id="formulaire" action="epices.php" method = "post">
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui4"/>
@@ -104,7 +104,7 @@
 		?>
 		Question 5 :
 		<?php echo "{$tabQues[4]}"; ?>		
-		<form id="formulaire" action="truc2.php" method = "post">
+		<form id="formulaire" action="epices.php" method = "post">
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui5"/>
@@ -123,7 +123,7 @@
 		?>
 		Question 6 : 
 		<?php echo "{$tabQues[5]}"; ?>
-		<form id="formulaire" action="truc2.php" method = "post">
+		<form id="formulaire" action="epices.php" method = "post">
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui6"/>
@@ -142,7 +142,7 @@
 		?>
 		Question 7 : 
 		<?php echo "{$tabQues[6]}"; ?>
-		<form id="formulaire" action="truc2.php" method = "post">
+		<form id="formulaire" action="epices.php" method = "post">
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui7"/>
@@ -161,7 +161,7 @@
 		?>
 		Question 8 : 
 		<?php echo "{$tabQues[7]}"; ?>
-		<form id="formulaire" action="truc2.php" method = "post">
+		<form id="formulaire" action="epices.php" method = "post">
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui8"/>
@@ -180,7 +180,7 @@
 		?>
 		Question 9 : 
 		<?php echo "{$tabQues[8]}"; ?>
-		<form id="formulaire" action="truc2.php" method = "post">
+		<form id="formulaire" action="epices.php" method = "post">
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui9"/>
@@ -199,7 +199,7 @@
 		?>
 		Question 10 : 
 		<?php echo "{$tabQues[9]}"; ?>
-		<form id="formulaire" action="truc2.php" method = "post">
+		<form id="formulaire" action="epices.php" method = "post">
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui10"/>
@@ -218,7 +218,7 @@
 		?>
 		Question 11 : 
 		<?php echo "{$tabQues[10]}"; ?>
-		<form id="formulaire" action="truc2.php" method = "post">
+		<form id="formulaire" action="epices.php" method = "post">
 			<div>
 			<label for "Nom"> Réponse </label>
 			<input type="submit" value="Oui" name = "Oui11"/>
@@ -238,9 +238,9 @@
 		Merci d'avoir répondu ! <br>
 		<?php 
 			$_SESSION['tabRep'][11] = $_SESSION['score'];
-			print_r ($_SESSION['tabRep']);
+			#print_r ($_SESSION['tabRep']);
 		?>
-		<form id="formulaire" action="truc.php" method = "post">
+		<form id="formulaire" action="choix_questionnaire.php" method = "post">
 			<input type="submit" value="Retour au début" name="Return"/>
 		</form>
 		<form id="formulaire" action="fichier.php" method = "post">
