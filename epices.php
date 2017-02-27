@@ -69,14 +69,31 @@
 					$_SESSION['score'] += 10.06;
 				}
 		?>
-		Question 2 : 
-		<?php echo "{$tabQues[1]}"; ?>
+		<div class="mui--text-display2">
+		<br>
+		<br>
+		Question 2 :
+
+		<?php
+			echo "{$tabQues[1]}"; 
+		?>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
 		<form id="formulaire" action="epices.php" method = "post">
-			<div>
-			<label for "Nom"> Réponse </label>
-			<input type="submit" value="Oui" name = "Oui2"/>
-			<input type="hidden" name="validation" value="ok">
-			<input type="submit" value="Non" name="Non2"/>
+			<div align="center">
+				<div>
+					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+				</div>
+				<br>
+				<div>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui2"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non2"/>
+				</div>
+			</div>
 		</form>
 		
 		
@@ -89,14 +106,31 @@
 					$_SESSION['score'] -= 11.83;
 				}
 		?>
-		Question 3 : 
-		<?php echo "{$tabQues[2]}"; ?>
+		<div class="mui--text-display2">
+		<br>
+		<br>
+		Question 3 :
+
+		<?php
+			echo "{$tabQues[2]}"; 
+		?>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
 		<form id="formulaire" action="epices.php" method = "post">
-			<div>
-			<label for "Nom"> Réponse </label>
-			<input type="submit" value="Oui" name = "Oui3"/>
-			<input type="hidden" name="validation" value="ok">
-			<input type="submit" value="Non" name="Non3"/>
+			<div align="center">
+				<div>
+					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+				</div>
+				<br>
+				<div>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui3"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non3"/>
+				</div>
+			</div>
 		</form>
 		
 		
@@ -109,14 +143,31 @@
 					$_SESSION['score'] -= 8.28;
 				}
 		?>
-		Question 4 : 
-		<?php echo "{$tabQues[3]}"; ?>
+		<div class="mui--text-display2">
+		<br>
+		<br>
+		Question 4 :
+
+		<?php
+			echo "{$tabQues[3]}"; 
+		?>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
 		<form id="formulaire" action="epices.php" method = "post">
-			<div>
-			<label for "Nom"> Réponse </label>
-			<input type="submit" value="Oui" name = "Oui4"/>
-			<input type="hidden" name="validation" value="ok">
-			<input type="submit" value="Non" name="Non4"/>
+			<div align="center">
+				<div>
+					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+				</div>
+				<br>
+				<div>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui4"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non4"/>
+				</div>
+			</div>
 		</form>
 		
 		
@@ -129,14 +180,31 @@
 					$_SESSION['score'] -= 8.28;
 				}
 		?>
+		<div class="mui--text-display2">
+		<br>
+		<br>
 		Question 5 :
-		<?php echo "{$tabQues[4]}"; ?>		
+
+		<?php
+			echo "{$tabQues[4]}"; 
+		?>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>		
 		<form id="formulaire" action="epices.php" method = "post">
-			<div>
-			<label for "Nom"> Réponse </label>
-			<input type="submit" value="Oui" name = "Oui5"/>
-			<input type="hidden" name="validation" value="ok">
-			<input type="submit" value="Non" name="Non5"/>
+			<div align="center">
+				<div>
+					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+				</div>
+				<br>
+				<div>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui5"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non5"/>
+				</div>
+			</div>
 		</form>
 		
 		
@@ -149,14 +217,31 @@
 					$_SESSION['score'] += 14.8;
 				}
 		?>
-		Question 6 : 
-		<?php echo "{$tabQues[5]}"; ?>
+		<div class="mui--text-display2">
+		<br>
+		<br>
+		Question 6 :
+
+		<?php
+			echo "{$tabQues[5]}"; 
+		?>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
 		<form id="formulaire" action="epices.php" method = "post">
-			<div>
-			<label for "Nom"> Réponse </label>
-			<input type="submit" value="Oui" name = "Oui6"/>
-			<input type="hidden" name="validation" value="ok">
-			<input type="submit" value="Non" name="Non6"/>
+			<div align="center">
+				<div>
+					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+				</div>
+				<br>
+				<div>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui6"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non6"/>
+				</div>
+			</div>
 		</form>
 		
 		
@@ -169,14 +254,31 @@
 					$_SESSION['score'] -= 6.51;
 				}
 		?>
-		Question 7 : 
-		<?php echo "{$tabQues[6]}"; ?>
+		<div class="mui--text-display2">
+		<br>
+		<br>
+		Question 7 :
+
+		<?php
+			echo "{$tabQues[6]}"; 
+		?>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
 		<form id="formulaire" action="epices.php" method = "post">
-			<div>
-			<label for "Nom"> Réponse </label>
-			<input type="submit" value="Oui" name = "Oui7"/>
-			<input type="hidden" name="validation" value="ok">
-			<input type="submit" value="Non" name="Non7"/>
+			<div align="center">
+				<div>
+					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+				</div>
+				<br>
+				<div>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui7"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non7"/>
+				</div>
+			</div>
 		</form>
 		
 		
@@ -189,14 +291,31 @@
 					$_SESSION['score'] -= 7.10;
 				}
 		?>
-		Question 8 : 
-		<?php echo "{$tabQues[7]}"; ?>
+		<div class="mui--text-display2">
+		<br>
+		<br>
+		Question 8 :
+
+		<?php
+			echo "{$tabQues[7]}"; 
+		?>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
 		<form id="formulaire" action="epices.php" method = "post">
-			<div>
-			<label for "Nom"> Réponse </label>
-			<input type="submit" value="Oui" name = "Oui8"/>
-			<input type="hidden" name="validation" value="ok">
-			<input type="submit" value="Non" name="Non8"/>
+			<div align="center">
+				<div>
+					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+				</div>
+				<br>
+				<div>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui8"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non8"/>
+				</div>
+			</div>
 		</form>
 		
 		
@@ -209,14 +328,31 @@
 					$_SESSION['score'] -= 7.10;
 				}
 		?>
-		Question 9 : 
-		<?php echo "{$tabQues[8]}"; ?>
+		<div class="mui--text-display2">
+		<br>
+		<br>
+		Question 9 :
+
+		<?php
+			echo "{$tabQues[8]}"; 
+		?>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
 		<form id="formulaire" action="epices.php" method = "post">
-			<div>
-			<label for "Nom"> Réponse </label>
-			<input type="submit" value="Oui" name = "Oui9"/>
-			<input type="hidden" name="validation" value="ok">
-			<input type="submit" value="Non" name="Non9"/>
+			<div align="center">
+				<div>
+					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+				</div>
+				<br>
+				<div>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui9"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non9"/>
+				</div>
+			</div>
 		</form>
 		
 		
@@ -229,14 +365,31 @@
 					$_SESSION['score'] -= 9.47;
 				}
 		?>
-		Question 10 : 
-		<?php echo "{$tabQues[9]}"; ?>
+		<div class="mui--text-display2">
+		<br>
+		<br>
+		Question 10 :
+
+		<?php
+			echo "{$tabQues[9]}"; 
+		?>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
 		<form id="formulaire" action="epices.php" method = "post">
-			<div>
-			<label for "Nom"> Réponse </label>
-			<input type="submit" value="Oui" name = "Oui10"/>
-			<input type="hidden" name="validation" value="ok">
-			<input type="submit" value="Non" name="Non10"/>
+			<div align="center">
+				<div>
+					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+				</div>
+				<br>
+				<div>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui10"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non10"/>
+				</div>
+			</div>
 		</form>
 		
 		
@@ -249,15 +402,34 @@
 					$_SESSION['score'] -= 9.47;
 				}
 		?>
-		Question 11 : 
-		<?php echo "{$tabQues[10]}"; ?>
+		<div class="mui--text-display2">
+		<br>
+		<br>
+		Question 11 :
+
+		<?php
+			echo "{$tabQues[10]}"; 
+		?>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
 		<form id="formulaire" action="epices.php" method = "post">
-			<div>
-			<label for "Nom"> Réponse </label>
-			<input type="submit" value="Oui" name = "Oui11"/>
-			<input type="hidden" name="validation" value="ok">
-			<input type="submit" value="Non" name="Non11"/>
+			<div align="center">
+				<div>
+					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+				</div>
+				<br>
+				<div>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Oui" name = "Oui11"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non11"/>
+				</div>
+			</div>
 		</form>
+		
+		
 		<?php
 			} elseif (isset($_POST['Non11']) or isset($_POST['Oui11'])){
 				if (isset($_POST['Non11'])) {
@@ -268,17 +440,23 @@
 				}
 		?>
 		
-		
-		Merci d'avoir répondu ! <br>
+		<div class="mui--text-display2">
+		<br>
+		<br>
+		Merci d'avoir répondu !
+		</div>
 		<?php 
 			$_SESSION['tabRep'][11] = $_SESSION['score'];
 		?>
-		<form id="formulaire" action="choix_questionnaire.php" method = "post">
 		<form id="formulaire" action="index.php" method = "post">
-			<input type="submit" value="Retour au début" name="Return"/>
+			<div align="center">
+				<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Retour au début" name = "Return"/>
+			</div>
 		</form>
 		<form id="formulaire" action="fichier.php" method = "post">
-			<input type="submit" value="Inscrire dans le csv" name="Inscrit"/>
+			<div align="center">
+				<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Enregistrer les réponses" name = "Enregistre"/>
+			</div>
 		</form>
 		<?php 
 			}
