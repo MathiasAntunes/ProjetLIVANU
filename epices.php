@@ -2,13 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-<<<<<<< HEAD:epices.php
 			<title>EPICES</title>
-=======
 			<title>Projet LIVANU</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css" />
->>>>>>> origin/master:truc2.php
 	</head>
+	<body>
 		<div class="mui-appbar">
 			<table width="100%">
 				<tr style="vertical-align:middle;">
@@ -16,7 +14,6 @@
 				</tr>
 			</table>
 		</div>			
-	<body>
 		<?php 
 			$ques = "Rencontrez-vous parfois un travailleur social ?"; 
 			$ques2 = "Bénéficiez-vous d'une assurance maladie complémentaire ?";
@@ -45,8 +42,6 @@
 		<?php
 			echo "{$tabQues[0]}"; 
 		?>
-<<<<<<< HEAD:epices.php
-=======
 		</div>
 		<br>
 		<br>
@@ -64,10 +59,7 @@
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Non" name="Non1"/>
 				</div>
 			</div>
->>>>>>> origin/master:truc2.php
 		</form>
-		
-		
 		<?php //debut question2
 			} elseif (isset($_POST['Non1']) or isset($_POST['Oui1'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 				if (isset($_POST['Non1'])) { //si la précédente réponse a été Non
@@ -280,13 +272,9 @@
 		Merci d'avoir répondu ! <br>
 		<?php 
 			$_SESSION['tabRep'][11] = $_SESSION['score'];
-			#print_r ($_SESSION['tabRep']);
 		?>
-<<<<<<< HEAD:epices.php
 		<form id="formulaire" action="choix_questionnaire.php" method = "post">
-=======
 		<form id="formulaire" action="index.php" method = "post">
->>>>>>> origin/master:truc2.php
 			<input type="submit" value="Retour au début" name="Return"/>
 		</form>
 		<form id="formulaire" action="fichier.php" method = "post">

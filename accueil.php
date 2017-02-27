@@ -6,16 +6,6 @@
 		<link rel="stylesheet" type="text/css" href="CSS.css"/>
 	</head>
 	<body>
-<<<<<<< HEAD
-		<form id="formulaire" action="epices.php" method = "post"> <!-- rajoutez la partie pour les noms-->
-			<select name="selection">
-				<option selected="selected">Faites votre choix</option>
-				<option value="epices">EPICES</option>
-				<option value="autre">Autre</option>
-			</select>
-			<input type="submit" value="C'est parti !" name = "Go"/>
-		</form>
-=======
 		<div align="center">
 			<div class="mui-appbar">
 				<table width="100%">
@@ -49,5 +39,4 @@
 			</form>
 		</div>
 	</body>
->>>>>>> origin/master
 </html>

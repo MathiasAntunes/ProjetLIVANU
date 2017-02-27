@@ -5,7 +5,6 @@
 			<title>Projet LIVANU</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css" />
 	</head>
-					 <!--faire un deuxième fichier dans celui là juste laisser la décla de tabRep dans l'autre faire les conditions et le remplissage de tab rep-->
 	<body>
 		<div class="mui-appbar">
 			<table width="100%" height="110px">
