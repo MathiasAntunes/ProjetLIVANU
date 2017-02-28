@@ -6,6 +6,13 @@
 		<link rel="stylesheet" type="text/css" href="CSS.css"/>
 	</head>
 	<body>
+		<?php
+			if (isset($_POST['go'])){
+				$_SESSION['PatDate'][0] = $_POST['nomP'];
+				$_SESSION['PatDate'][1] = $_POST['prenomP'];
+				$_SESSION['PatDate'][2] = date("d/m/Y");
+			}
+		?>
 		<div align="center">
 			<div class="mui-appbar">
 				<table width="100%">

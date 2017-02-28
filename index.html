@@ -5,16 +5,27 @@
 			<title>Projet LIVANU</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css" />
 	</head>
-		<script type="text/javascript">
+		<script language="Javascript">
 			function verifForm(f){
-				if (f.nomP == "") {
+				if (!f.nomP.value && !f.prenomP.value) {
 					f.nomP.style.backgroundColor = "#fba";
-					return false;
-				}
-				if (f.prenomP =="") {
 					f.prenomP.style.backgroundColor = "#fba";
+					alert("Veuillez remplir les champs Nom et Prénom");
 					return false;
 				}
+				if (!f.prenomP.value) {
+					f.prenomP.style.backgroundColor = "#fba";
+					f.nomP.style.backgroundColor = "";
+					alert("Veuillez remplir le champ Prénom");
+					return false;
+				}
+				if (!f.nomP.value) {
+					f.nomP.style.backgroundColor = "#fba";
+					f.prenomP.style.backgroundColor = "";
+					alert("Veuillez remplir le champ Nom");
+					return false;
+				}
+				return true;
 			}
 		</script>
 	<body>
@@ -31,10 +42,10 @@
 				<td align="center">
 					<form action="accueil.php" method ="post" onsubmit="return verifForm(this)">
 						<div class="mui--text-display2">
-							Nom du patient : <br><input type="text" name="nomP"> <br> <br> <!-- Javascript ou que sais-je pour voir si les champs sont bien complétés-->
-							Prénom du patient : <br><input type="text" name="prenomP"> <br><br>
+							Nom du patient : <br><input type="text" name="nomP" value=""> <br> <br> <!-- Javascript ou que sais-je pour voir si les champs sont bien complétés-->
+							Prénom du patient : <br><input type="text" name="prenomP" value=""> <br><br>
 						</div>
-							<input type="submit" class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" value="C'est parti">
+							<input type="submit" class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" value="C'est parti" name="go">
 
 					</form>
 				</td>

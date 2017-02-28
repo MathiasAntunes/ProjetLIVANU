@@ -445,9 +445,9 @@
 		<br>
 		Merci d'avoir répondu !
 		</div>
-		<form id="formulaire" action="index.php" method = "post">
+		<form id="formulaire" action="accueil.php" method = "post">
 			<div align="center">
-				<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Retour au début" name = "Return"/>
+				<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Changer de questionnaire"/>
 			</div>
 		</form>
 		<form id="formulaire" action="fichier.php" method = "post">
