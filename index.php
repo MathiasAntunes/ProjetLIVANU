@@ -16,9 +16,6 @@
 		<table width="100%" height="77%" >
 			<tr style="height:50%;">
 				<td align="center" class="mui--text-display3">
-					<?php 
-					$_SESSION['tabRep'] = array();
-					?>
 					Pret à commencer ?
 				</td>
 			</tr>

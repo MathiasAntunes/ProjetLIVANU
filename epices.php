@@ -32,7 +32,7 @@
 		<div align="center">
 			<?php 
 				if (!isset($_POST['validation'])) {// si le bouton de départ a été pressé
-					$_SESSION['score'] = 75.14;
+					$_SESSION['tabRepEpices'][0] = 75.14;
 			?>
 		<div class="mui--text-display2">
 		<br>
@@ -63,10 +63,10 @@
 		<?php //debut question2
 			} elseif (isset($_POST['Non1']) or isset($_POST['Oui1'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 				if (isset($_POST['Non1'])) { //si la précédente réponse a été Non
-					$_SESSION['tabRep'][0] = "Non";
+					$_SESSION['tabRepEpices'][1] = "Non";
 				} else { //sinon si c'est Oui
-					$_SESSION['tabRep'][0] = "Oui";
-					$_SESSION['score'] += 10.06;
+					$_SESSION['tabRepEpices'][1] = "Oui";
+					$_SESSION['tabRepEpices'][0] += 10.06;
 				}
 		?>
 		<div class="mui--text-display2">
@@ -100,10 +100,10 @@
 		<?php //debut question3
 			} elseif (isset($_POST['Non2']) or isset($_POST['Oui2'])){
 				if (isset($_POST['Non2'])) {
-					$_SESSION['tabRep'][1] = "Non";
+					$_SESSION['tabRepEpices'][2] = "Non";
 				} else {
-					$_SESSION['tabRep'][1] = "Oui";
-					$_SESSION['score'] -= 11.83;
+					$_SESSION['tabRepEpices'][2] = "Oui";
+					$_SESSION['tabRepEpices'][0] -= 11.83;
 				}
 		?>
 		<div class="mui--text-display2">
@@ -137,10 +137,10 @@
 		<?php //debut question4
 			} elseif (isset($_POST['Non3']) or isset($_POST['Oui3'])){
 				if (isset($_POST['Non3'])) {
-					$_SESSION['tabRep'][2] = "Non";
+					$_SESSION['tabRepEpices'][3] = "Non";
 				} else {
-					$_SESSION['tabRep'][2] = "Oui";
-					$_SESSION['score'] -= 8.28;
+					$_SESSION['tabRepEpices'][3] = "Oui";
+					$_SESSION['tabRepEpices'][0] -= 8.28;
 				}
 		?>
 		<div class="mui--text-display2">
@@ -174,10 +174,10 @@
 		<?php //debut question5
 			} elseif (isset($_POST['Non4']) or isset($_POST['Oui4'])){
 				if (isset($_POST['Non4'])) {
-					$_SESSION['tabRep'][3] = "Non";
+					$_SESSION['tabRepEpices'][4] = "Non";
 				} else {
-					$_SESSION['tabRep'][3] = "Oui";
-					$_SESSION['score'] -= 8.28;
+					$_SESSION['tabRepEpices'][4] = "Oui";
+					$_SESSION['tabRepEpices'][0] -= 8.28;
 				}
 		?>
 		<div class="mui--text-display2">
@@ -211,10 +211,10 @@
 		<?php //debut question6
 			} elseif (isset($_POST['Non5']) or isset($_POST['Oui5'])){
 				if (isset($_POST['Non5'])) {
-					$_SESSION['tabRep'][4] = "Non";
+					$_SESSION['tabRepEpices'][5] = "Non";
 				} else {
-					$_SESSION['tabRep'][4] = "Oui";
-					$_SESSION['score'] += 14.8;
+					$_SESSION['tabRepEpices'][5] = "Oui";
+					$_SESSION['tabRepEpices'][0] += 14.8;
 				}
 		?>
 		<div class="mui--text-display2">
@@ -248,10 +248,10 @@
 		<?php //debut question7
 			} elseif (isset($_POST['Non6']) or isset($_POST['Oui6'])){
 				if (isset($_POST['Non6'])) {
-					$_SESSION['tabRep'][5] = "Non";
+					$_SESSION['tabRepEpices'][6] = "Non";
 				} else {
-					$_SESSION['tabRep'][5] = "Oui";
-					$_SESSION['score'] -= 6.51;
+					$_SESSION['tabRepEpices'][6] = "Oui";
+					$_SESSION['tabRepEpices'][0] -= 6.51;
 				}
 		?>
 		<div class="mui--text-display2">
@@ -285,10 +285,10 @@
 		<?php //debut question8
 			} elseif (isset($_POST['Non7']) or isset($_POST['Oui7'])){
 				if (isset($_POST['Non7'])) {
-					$_SESSION['tabRep'][6] = "Non";
+					$_SESSION['tabRepEpices'][7] = "Non";
 				} else {
-					$_SESSION['tabRep'][6] = "Oui";
-					$_SESSION['score'] -= 7.10;
+					$_SESSION['tabRepEpices'][7] = "Oui";
+					$_SESSION['tabRepEpices'][0] -= 7.10;
 				}
 		?>
 		<div class="mui--text-display2">
@@ -322,10 +322,10 @@
 		<?php //debut question9
 			} elseif (isset($_POST['Non8']) or isset($_POST['Oui8'])){
 				if (isset($_POST['Non8'])) {
-					$_SESSION['tabRep'][7] = "Non";
+					$_SESSION['tabRepEpices'][8] = "Non";
 				} else {
-					$_SESSION['tabRep'][7] = "Oui";
-					$_SESSION['score'] -= 7.10;
+					$_SESSION['tabRepEpices'][8] = "Oui";
+					$_SESSION['tabRepEpices'][0] -= 7.10;
 				}
 		?>
 		<div class="mui--text-display2">
@@ -359,10 +359,10 @@
 		<?php //debut question10
 			} elseif (isset($_POST['Non9']) or isset($_POST['Oui9'])){
 				if (isset($_POST['Non9'])) {
-					$_SESSION['tabRep'][8] = "Non";
+					$_SESSION['tabRepEpices'][9] = "Non";
 				} else {
-					$_SESSION['tabRep'][8] = "Oui";
-					$_SESSION['score'] -= 9.47;
+					$_SESSION['tabRepEpices'][9] = "Oui";
+					$_SESSION['tabRepEpices'][0] -= 9.47;
 				}
 		?>
 		<div class="mui--text-display2">
@@ -396,10 +396,10 @@
 		<?php //debut question11
 			} elseif (isset($_POST['Non10']) or isset($_POST['Oui10'])){
 				if (isset($_POST['Non10'])) {
-					$_SESSION['tabRep'][9] = "Non";
+					$_SESSION['tabRepEpices'][10] = "Non";
 				} else {
-					$_SESSION['tabRep'][9] = "Oui";
-					$_SESSION['score'] -= 9.47;
+					$_SESSION['tabRepEpices'][10] = "Oui";
+					$_SESSION['tabRepEpices'][0] -= 9.47;
 				}
 		?>
 		<div class="mui--text-display2">
@@ -433,10 +433,10 @@
 		<?php
 			} elseif (isset($_POST['Non11']) or isset($_POST['Oui11'])){
 				if (isset($_POST['Non11'])) {
-					$_SESSION['tabRep'][10] = "Non";
+					$_SESSION['tabRepEpices'][11] = "Non";
 				} else {
-					$_SESSION['tabRep'][10] = "Oui";
-					$_SESSION['score'] -= 7.10;
+					$_SESSION['tabRepEpices'][11] = "Oui";
+					$_SESSION['tabRepEpices'][0] -= 7.10;
 				}
 		?>
 		
@@ -445,9 +445,6 @@
 		<br>
 		Merci d'avoir répondu !
 		</div>
-		<?php 
-			$_SESSION['tabRep'][11] = $_SESSION['score'];
-		?>
 		<form id="formulaire" action="index.php" method = "post">
 			<div align="center">
 				<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Retour au début" name = "Return"/>
