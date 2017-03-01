@@ -7,15 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="CSS.css" />
 	</head>
 	<body>
-		<div class="mui-appbar">
-			<table width="100%">
-				<tr style="vertical-align:middle;">
-					<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire EPICES</td>
-				</tr>
-			</table>
-		</div>			
 		<?php 
-			$ques = "Rencontrez-vous parfois un travailleur social ?"; 
+			$ques1 = "Rencontrez-vous parfois un travailleur social ?"; 
 			$ques2 = "Bénéficiez-vous d'une assurance maladie complémentaire ?";
 			$ques3 = "Vivez-vous en couple ?";
 			$ques4 = "Etes-vous propriétaire de votre logement ?";
@@ -25,10 +18,17 @@
 			$ques8 = "Etes-vous parti en vacances au cours des 12 derniers mois ?";
 			$ques9 = "Au cours des 6 derniers mois, avez-vous eu des contacts avec des membres de votre famille autres que vos parents ou vos enfants ?";
 			$ques10 = "En cas de difficultés, y-a-t’il dans votre entourage des personnes sur qui vous puissiez compter pour vous héberger quelques jours en cas de besoin ?";
-			$ques11 = "En cas de difficultés, y-a-t’il dans votre entourage des personnes sur qui vous puissiez compter pour vous apporter une aide matérielle ?";
-			$tabQues = array ($ques, $ques2, $ques3, $ques4, $ques5, $ques6, $ques7, $ques8, $ques9, $ques10, $ques11);		
+			$ques11 = "En cas de difficultés, y-a-t’il dans votre entourage des personnes sur qui vous puissiez compter pour vous apporter une aide matérielle ?";		
 		
 		?>
+		<div class="mui--text-headline" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
+		<div class="mui-appbar">
+			<table width="100%">
+				<tr style="vertical-align:middle;">
+					<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire EPICES</td>
+				</tr>
+			</table>
+		</div>			
 		<div align="center">
 			<?php 
 				if (!isset($_POST['validation'])) {// si le bouton de départ a été pressé
@@ -40,7 +40,7 @@
 		Question 1 :
 
 		<?php
-			echo "{$tabQues[0]}"; 
+			echo "$ques1"; 
 		?>
 		</div>
 		<br>
@@ -75,7 +75,7 @@
 		Question 2 :
 
 		<?php
-			echo "{$tabQues[1]}"; 
+			echo "$ques2"; 
 		?>
 		</div>
 		<br>
@@ -112,7 +112,7 @@
 		Question 3 :
 
 		<?php
-			echo "{$tabQues[2]}"; 
+			echo "$ques3"; 
 		?>
 		</div>
 		<br>
@@ -149,7 +149,7 @@
 		Question 4 :
 
 		<?php
-			echo "{$tabQues[3]}"; 
+			echo "$ques4"; 
 		?>
 		</div>
 		<br>
@@ -186,7 +186,7 @@
 		Question 5 :
 
 		<?php
-			echo "{$tabQues[4]}"; 
+			echo "$ques5"; 
 		?>
 		</div>
 		<br>
@@ -223,7 +223,7 @@
 		Question 6 :
 
 		<?php
-			echo "{$tabQues[5]}"; 
+			echo "$ques6"; 
 		?>
 		</div>
 		<br>
@@ -260,7 +260,7 @@
 		Question 7 :
 
 		<?php
-			echo "{$tabQues[6]}"; 
+			echo "$ques7"; 
 		?>
 		</div>
 		<br>
@@ -297,7 +297,7 @@
 		Question 8 :
 
 		<?php
-			echo "{$tabQues[7]}"; 
+			echo "$ques8"; 
 		?>
 		</div>
 		<br>
@@ -334,7 +334,7 @@
 		Question 9 :
 
 		<?php
-			echo "{$tabQues[8]}"; 
+			echo "$ques9"; 
 		?>
 		</div>
 		<br>
@@ -371,7 +371,7 @@
 		Question 10 :
 
 		<?php
-			echo "{$tabQues[9]}"; 
+			echo "$ques10"; 
 		?>
 		</div>
 		<br>
@@ -408,7 +408,7 @@
 		Question 11 :
 
 		<?php
-			echo "{$tabQues[10]}"; 
+			echo "$ques11"; 
 		?>
 		</div>
 		<br>

@@ -8,19 +8,26 @@
 	<body>
 		<?php
 			if (isset($_POST['go'])){
-				$_SESSION['PatDate'][0] = $_POST['nomP'];
-				$_SESSION['PatDate'][1] = $_POST['prenomP'];
+				$_SESSION['PatDate'][0] = ucfirst(strtolower($_POST['nomP']));
+				$_SESSION['PatDate'][1] = ucfirst(strtolower($_POST['prenomP']));
 				$_SESSION['PatDate'][2] = date("d/m/Y");
+				$_SESSION['tabRepEpices'] = array(" "," "," "," "," "," "," "," "," "," "," "," ");
+				$_SESSION['tabRepSF']= array(" "," "," "," "," "," "," "," "," "," "," "," ");
+				$_SESSION['tabRepAlim'] = array(" "," "," "," "," "," "," "," "," "," ");
+				
 			}
 		?>
-		<div align="center">
-			<div class="mui-appbar">
+		<div class="mui--text-headline" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
+		<div class="mui-appbar">
+			<div align="center">
 				<table width="100%">
 					<tr style="vertical-align:middle;">
 						<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Projet LIVANU</td>
 					</tr>
 				</table>
 			</div>
+		</div>
+		<div align="center">
 			<br>
 			<br>
 			<br>

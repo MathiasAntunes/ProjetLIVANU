@@ -7,15 +7,8 @@
 		<link rel="stylesheet" type="text/css" href="CSS.css" />
 	</head>
 	<body>
-		<div class="mui-appbar">
-			<table width="100%">
-				<tr style="vertical-align:middle;">
-					<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire SF-12</td>
-				</tr>
-			</table>
-		</div>			
 		<?php 
-			$ques = "Dans l'ensemble pensez-vous que votre santé est :"; 
+			$ques1 = "Dans l'ensemble pensez-vous que votre santé est :"; 
 			$ques2 = "En raison de votre état de santé actuel, êtes-vous limité pour des efforts physiques modérés (déplacer une table, passer l’aspirateur, jouer aux boules…) ?";
 			$ques3 = "En raison de votre état de santé actuel, êtes-vous limité pour monter plusieurs étages par l’escalier ?";
 			$ques4 = "Au cours de ces 4 dernières semaines, et en raison de votre état physique avez-vous accompli moins de choses que vous auriez souhaité ?";
@@ -26,10 +19,18 @@
 			$ques9 = "Au cours de ces 4 dernières semaines, y a t-il eu des moments où vous vous êtes senti calme et détendu ?";
 			$ques10 = "Au cours de ces 4 dernières semaines, y a t-il eu des moments où vous vous êtes senti débordant d’énergie ?";
 			$ques11 = "Au cours de ces 4 dernières semaines, y a t-il eu des moments où vous vous êtes senti triste et abattu ?";
-			$ques12 = "Au cours de ces 4 dernières semaines, y a t-il eu des moments où votre état de santé physique ou émotionnel vous a gêné dans votre vie sociale et vos relations avec les autres, votre famille, vos amis, vos connaissances ?";
-			$tabQues = array ($ques, $ques2, $ques3, $ques4, $ques5, $ques6, $ques7, $ques8, $ques9, $ques10, $ques11, $ques12);		
+			$ques12 = "Au cours de ces 4 dernières semaines, y a t-il eu des moments où votre état de santé physique ou émotionnel vous a gêné dans votre vie sociale et vos relations avec les autres, votre famille, vos amis, vos connaissances ?";		
 		
 		?>
+		<div class="mui--text-headline" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
+		<div class="mui-appbar">
+			<table width="100%">
+				<tr style="vertical-align:middle;">
+					<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire SF-12</td>
+				</tr>
+			</table>
+		</div>			
+		<div class="mui--text-headline" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
 		<div align="center">
 			<?php 
 				if (!isset($_POST['validation'])) {// si le bouton de départ a été pressé
@@ -41,7 +42,7 @@
 		Question 1 :
 
 		<?php
-			echo "{$tabQues[0]}"; 
+			echo "$ques1"; 
 		?>
 		</div>
 		<br>
@@ -84,7 +85,7 @@
 		Question 2 :
 
 		<?php
-			echo "{$tabQues[1]}"; 
+			echo "$ques2"; 
 		?>
 		</div>
 		<br>
@@ -124,7 +125,7 @@
 		Question 3 :
 
 		<?php
-			echo "{$tabQues[2]}"; 
+			echo "$ques3"; 
 		?>
 		</div>
 		<br>
@@ -164,7 +165,7 @@
 		Question 4 :
 
 		<?php
-			echo "{$tabQues[3]}"; 
+			echo "$ques4"; 
 		?>
 		</div>
 		<br>
@@ -207,7 +208,7 @@
 		Question 5 :
 
 		<?php
-			echo "{$tabQues[4]}"; 
+			echo "$ques5"; 
 		?>
 		</div>
 		<br>
@@ -250,7 +251,7 @@
 		Question 6 :
 
 		<?php
-			echo "{$tabQues[5]}"; 
+			echo "$ques6"; 
 		?>
 		</div>
 		<br>
@@ -293,7 +294,7 @@
 		Question 7 :
 
 		<?php
-			echo "{$tabQues[6]}"; 
+			echo "$ques7"; 
 		?>
 		</div>
 		<br>
@@ -336,7 +337,7 @@
 		Question 8 :
 
 		<?php
-			echo "{$tabQues[7]}"; 
+			echo "$ques8"; 
 		?>
 		</div>
 		<br>
@@ -379,7 +380,7 @@
 		Question 9 :
 
 		<?php
-			echo "{$tabQues[8]}"; 
+			echo "$ques9"; 
 		?>
 		</div>
 		<br>
@@ -422,7 +423,7 @@
 		Question 10 :
 
 		<?php
-			echo "{$tabQues[9]}"; 
+			echo "$ques10"; 
 		?>
 		</div>
 		<br>
@@ -465,7 +466,7 @@
 		Question 11 :
 
 		<?php
-			echo "{$tabQues[10]}"; 
+			echo "$ques11"; 
 		?>
 		</div>
 		<br>
@@ -508,7 +509,7 @@
 		Question 12 :
 
 		<?php
-			echo "{$tabQues[11]}"; 
+			echo "$ques12"; 
 		?>
 		</div>
 		<br>
