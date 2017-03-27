@@ -1,33 +1,33 @@
-<!-- Utilisateur/Mdp en dur avec des listes -->
+<!-- Utilisateur/Mdp en dur avec des listes , peut être mettre en sesson stop puis start ici, à tester-->
 <html>
 	<head>
 		<meta charset="UTF-8"/>
 			<title>Projet LIVANU</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css" />
 	</head>
-		<script language="Javascript">
-			function verifForm(f){
-				if (!f.nomP.value && !f.prenomP.value) {
-					f.nomP.style.backgroundColor = "#fba";
-					f.prenomP.style.backgroundColor = "#fba";
-					alert("Veuillez remplir les champs Nom et Prénom");
-					return false;
-				}
-				if (!f.prenomP.value) {
-					f.prenomP.style.backgroundColor = "#fba";
-					f.nomP.style.backgroundColor = "";
-					alert("Veuillez remplir le champ Prénom");
-					return false;
-				}
-				if (!f.nomP.value) {
-					f.nomP.style.backgroundColor = "#fba";
-					f.prenomP.style.backgroundColor = "";
-					alert("Veuillez remplir le champ Nom");
-					return false;
-				}
-				return true;
+	<script language="Javascript">
+		function verifForm(f){
+			if (!f.nomP.value && !f.prenomP.value) {
+				f.nomP.style.backgroundColor = "#fba";
+				f.prenomP.style.backgroundColor = "#fba";
+				alert("Veuillez remplir les champs Nom et Prénom");
+				return false;
 			}
-		</script>
+			if (!f.prenomP.value) {
+				f.prenomP.style.backgroundColor = "#fba";
+				f.nomP.style.backgroundColor = "";
+				alert("Veuillez remplir le champ Prénom");
+				return false;
+			}
+			if (!f.nomP.value) {
+				f.nomP.style.backgroundColor = "#fba";
+				f.prenomP.style.backgroundColor = "";
+				alert("Veuillez remplir le champ Nom");
+				return false;
+			}
+			return true;
+		}
+	</script>
 	<body>
 		<div class="mui-appbar">
 			<table width="100%" height="110px">

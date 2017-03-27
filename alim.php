@@ -33,30 +33,34 @@
 			$compl9 = "Cette catégorie comprend par exemple les pizzas, les barquettes préparées, sous vide ou congelées, les cassoulets en conserve, les plats achetés chez le traiteur ainsi que ceux achetés en fast-food et rapportés à la maison, etc.";
 			$compl10 = "Cette catégorie comprend tous les produits sucrés quelque soit leur forme (par exemple : confiserie, barre chocolatée, flans, pain au raisin, mousse au chocolat, etc.) et leur provenance (commerce ou fait maison).";
 		?>
-		<div class="mui--text-headline" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
+		<div class="mui--text-display3" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
+		<div align="right">
+			<form id="changePat" action="index.html" >
+				<input type="submit" name="chPat" value="Changer de patient" class="mui-btn mui-btn--small mui-btn--raised 	mui-btn--primary"> 
+			</form>
+		</div>
 		<div class="mui-appbar">
 			<table width="100%">
 				<tr style="vertical-align:middle;">
-					<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire ALIMENTATION</td>
+					<td class="mui--appbar-height mui--text-light mui--text-display4" align="center">Questionnaire ALIMENTATION</td>
 				</tr>
 			</table>
 		</div>			
-		<div class="mui--text-headline" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
 		<div align="center">
 			<?php 
 				if (!isset($_POST['validation'])) {// si le bouton de départ a été pressé
 					//$_SESSION['score'] = 75.14;
 			?>
-		<div class="mui--text-display2">
+		<div class="mui--text-display3">
 			<br>
 			<br>
 			Question 1 :
-
+			<br>
 			<?php
 				echo "$ques1";
 			?>
 		</div>
-		<div class="mui--text-headline">
+		<div class="mui--text-display2">
 			<?php
 				echo "$compl1";
 			?>
@@ -68,7 +72,7 @@
 		<form id="formulaire" action="alim.php" method = "post">
 			<div align="center">
 				<div>
-					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+					<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 				</div>
 				<br>
 				<div>
@@ -81,7 +85,7 @@
 		<?php
 			} elseif (isset($_POST['oui1']) or isset($_POST['non1'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 				if (isset($_POST['oui1'])) { ?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -95,7 +99,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -110,7 +114,7 @@
 			<?php 
 				} elseif (isset($_POST['non1'])) { 
 			?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -124,7 +128,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -157,16 +161,16 @@
 				}			
 		?>
 		
-		<div class="mui--text-display2">
+		<div class="mui--text-display3">
 			<br>
 			<br>
 			Question 2 :
-
+			<br>
 			<?php
 				echo "$ques2";
 			?>
 		</div>
-		<div class="mui--text-headline">
+		<div class="mui--text-display2">
 			<?php
 				echo "$compl2";
 			?>
@@ -178,7 +182,7 @@
 		<form id="formulaire" action="alim.php" method = "post">
 			<div align="center">
 				<div>
-					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+					<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 				</div>
 				<br>
 				<div>
@@ -191,7 +195,7 @@
 		<?php
 			} elseif (isset($_POST['oui2']) or isset($_POST['non2'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 				if (isset($_POST['oui2'])) { ?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -205,7 +209,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -220,7 +224,7 @@
 			<?php 
 				} elseif (isset($_POST['non2'])) { 
 			?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -234,7 +238,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -266,16 +270,16 @@
 					$_SESSION['tabRepAlim'][1] = "8";
 				}			
 		?>
-		<div class="mui--text-display2">
+		<div class="mui--text-display3">
 			<br>
 			<br>
 			Question 3 :
-
+			<br>
 			<?php
 				echo "$ques3";
 			?>
 		</div>
-		<div class="mui--text-headline">
+		<div class="mui--text-display2">
 			<?php
 				echo "$compl3";
 			?>
@@ -287,7 +291,7 @@
 		<form id="formulaire" action="alim.php" method = "post">
 			<div align="center">
 				<div>
-					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+					<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 				</div>
 				<br>
 				<div>
@@ -300,7 +304,7 @@
 		<?php
 			} elseif (isset($_POST['oui3']) or isset($_POST['non3'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 				if (isset($_POST['oui3'])) { ?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -314,7 +318,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -329,7 +333,7 @@
 			<?php 
 				} elseif (isset($_POST['non3'])) { 
 			?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -343,7 +347,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -375,16 +379,16 @@
 					$_SESSION['tabRepAlim'][2] = "8";
 				}			
 		?>
-		<div class="mui--text-display2">
+		<div class="mui--text-display3">
 			<br>
 			<br>
 			Question 4 :
-
+			<br>
 			<?php
 				echo "$ques4";
 			?>
 		</div>
-		<div class="mui--text-headline">
+		<div class="mui--text-display2">
 			<?php
 				echo "$compl4";
 			?>
@@ -396,7 +400,7 @@
 		<form id="formulaire" action="alim.php" method = "post">
 			<div align="center">
 				<div>
-					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+					<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 				</div>
 				<br>
 				<div>
@@ -409,7 +413,7 @@
 		<?php
 			} elseif (isset($_POST['oui4']) or isset($_POST['non4'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 				if (isset($_POST['oui4'])) { ?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -423,7 +427,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -438,7 +442,7 @@
 			<?php 
 				} elseif (isset($_POST['non4'])) { 
 			?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -452,7 +456,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -484,16 +488,16 @@
 					$_SESSION['tabRepAlim'][3] = "8";
 				}			
 		?>
-		<div class="mui--text-display2">
+		<div class="mui--text-display3">
 			<br>
 			<br>
 			Question 5 :
-
+			<br>
 			<?php
 				echo "$ques5";
 			?>
 		</div>
-		<div class="mui--text-headline">
+		<div class="mui--text-display2">
 			<?php
 				echo "$compl5";
 			?>
@@ -505,7 +509,7 @@
 		<form id="formulaire" action="alim.php" method = "post">
 			<div align="center">
 				<div>
-					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+					<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 				</div>
 				<br>
 				<div>
@@ -518,7 +522,7 @@
 		<?php
 			} elseif (isset($_POST['oui5']) or isset($_POST['non5'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 				if (isset($_POST['oui5'])) { ?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -532,7 +536,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -547,7 +551,7 @@
 			<?php 
 				} elseif (isset($_POST['non5'])) { 
 			?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -561,7 +565,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -593,16 +597,16 @@
 					$_SESSION['tabRepAlim'][4] = "8";
 				}			
 		?>
-		<div class="mui--text-display2">
+		<div class="mui--text-display3">
 			<br>
 			<br>
 			Question 6 :
-
+			<br>
 			<?php
 				echo "$ques6";
 			?>
 		</div>
-		<div class="mui--text-headline">
+		<div class="mui--text-display2">
 			<?php
 				echo "$compl6";
 			?>
@@ -614,7 +618,7 @@
 		<form id="formulaire" action="alim.php" method = "post">
 			<div align="center">
 				<div>
-					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+					<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 				</div>
 				<br>
 				<div>
@@ -627,7 +631,7 @@
 		<?php
 			} elseif (isset($_POST['oui6']) or isset($_POST['non6'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 				if (isset($_POST['oui6'])) { ?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -641,7 +645,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -656,7 +660,7 @@
 			<?php 
 				} elseif (isset($_POST['non6'])) { 
 			?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -670,7 +674,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -702,16 +706,16 @@
 					$_SESSION['tabRepAlim'][5] = "8";
 				}			
 		?>
-		<div class="mui--text-display2">
+		<div class="mui--text-display3">
 			<br>
 			<br>
 			Question 7 :
-
+			<br>
 			<?php
 				echo "$ques7";
 			?>
 		</div>
-		<div class="mui--text-headline">
+		<div class="mui--text-display2">
 			<?php
 				echo "$compl7";
 			?>
@@ -723,7 +727,7 @@
 		<form id="formulaire" action="alim.php" method = "post">
 			<div align="center">
 				<div>
-					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+					<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 				</div>
 				<br>
 				<div>
@@ -736,7 +740,7 @@
 		<?php
 			} elseif (isset($_POST['oui7']) or isset($_POST['non7'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 				if (isset($_POST['oui7'])) { ?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -750,7 +754,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -765,7 +769,7 @@
 			<?php 
 				} elseif (isset($_POST['non7'])) { 
 			?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -779,7 +783,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -811,16 +815,16 @@
 					$_SESSION['tabRepAlim'][6] = "8";
 				}			
 		?>
-		<div class="mui--text-display2">
+		<div class="mui--text-display3">
 			<br>
 			<br>
 			Question 8 :
-
+			<br>
 			<?php
 				echo "$ques8";
 			?>
 		</div>
-		<div class="mui--text-headline">
+		<div class="mui--text-display2">
 			<?php
 				echo "$compl8";
 			?>
@@ -832,7 +836,7 @@
 		<form id="formulaire" action="alim.php" method = "post">
 			<div align="center">
 				<div>
-					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+					<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 				</div>
 				<br>
 				<div>
@@ -845,7 +849,7 @@
 		<?php
 			} elseif (isset($_POST['oui8']) or isset($_POST['non8'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 				if (isset($_POST['oui8'])) { ?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -859,7 +863,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -874,7 +878,7 @@
 			<?php 
 				} elseif (isset($_POST['non8'])) { 
 			?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -888,7 +892,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -920,16 +924,16 @@
 					$_SESSION['tabRepAlim'][7] = "8";
 				}			
 		?>
-		<div class="mui--text-display2">
+		<div class="mui--text-display3">
 			<br>
 			<br>
 			Question 9 :
-
+			<br>
 			<?php
 				echo "$ques9";
 			?>
 		</div>
-		<div class="mui--text-headline">
+		<div class="mui--text-display2">
 			<?php
 				echo "$compl9";
 			?>
@@ -941,7 +945,7 @@
 		<form id="formulaire" action="alim.php" method = "post">
 			<div align="center">
 				<div>
-					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+					<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 				</div>
 				<br>
 				<div>
@@ -954,7 +958,7 @@
 		<?php
 			} elseif (isset($_POST['oui9']) or isset($_POST['non9'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 				if (isset($_POST['oui9'])) { ?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -968,7 +972,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -983,7 +987,7 @@
 			<?php 
 				} elseif (isset($_POST['non9'])) { 
 			?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -997,7 +1001,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -1029,16 +1033,16 @@
 					$_SESSION['tabRepAlim'][8] = "8";
 				}			
 		?>
-		<div class="mui--text-display2">
+		<div class="mui--text-display3">
 			<br>
 			<br>
 			Question 10 :
-
+			<br>
 			<?php
 				echo "$ques10";
 			?>
 		</div>
-		<div class="mui--text-headline">
+		<div class="mui--text-display2">
 			<?php
 				echo "$compl10";
 			?>
@@ -1050,7 +1054,7 @@
 		<form id="formulaire" action="alim.php" method = "post">
 			<div align="center">
 				<div>
-					<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+					<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 				</div>
 				<br>
 				<div>
@@ -1063,7 +1067,7 @@
 		<?php
 			} elseif (isset($_POST['oui10']) or isset($_POST['non10'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 				if (isset($_POST['oui10'])) { ?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -1077,7 +1081,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -1092,7 +1096,7 @@
 			<?php 
 				} elseif (isset($_POST['non10'])) { 
 			?>
-					<div class="mui--text-display2">
+					<div class="mui--text-display3">
 						<br>
 						<br>
 						<?php
@@ -1106,7 +1110,7 @@
 					<form id="formulaire" action="alim.php" method = "post">
 						<div align="center">
 							<div>
-								<label  class="mui--text-display1" for "Nom"> Réponse : </label>
+								<label  class="mui--text-display3" for "Nom"> Réponse : </label>
 							</div>
 							<br>
 							<div>
@@ -1138,13 +1142,13 @@
 					$_SESSION['tabRepAlim'][9] = "8";
 				}			
 		?>
-		<div class="mui--text-display2">
+		<div class="mui--text-display3">
 		<br>
 		<br>
 		Merci d'avoir répondu !
 		</div>
 		<?php 
-			//$_SESSION['tabRep'][11] = $_SESSION['score'];
+			$_SESSION['alim'] = true;
 		?>
 		<form id="formulaire" action="accueil.php" method = "post">
 			<div align="center">

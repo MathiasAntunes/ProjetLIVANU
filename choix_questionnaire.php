@@ -1,5 +1,5 @@
 <?php session_start(); 
-if ($_POST['selection'] == "epices") {
+if ($_POST['selection'] == "EPICES") {
 	header('Location: epices.php'); 
 }
 if ($_POST['selection'] == "SF-12") {

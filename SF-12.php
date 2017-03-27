@@ -22,7 +22,12 @@
 			$ques12 = "Au cours de ces 4 dernières semaines, y a t-il eu des moments où votre état de santé physique ou émotionnel vous a gêné dans votre vie sociale et vos relations avec les autres, votre famille, vos amis, vos connaissances ?";		
 		
 		?>
-		<div class="mui--text-headline" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
+		<div class="mui--text-display2" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
+		<div align="right">
+			<form id="changePat" action="index.html" >
+				<input type="submit" name="chPat" value="Changer de patient" class="mui-btn mui-btn--small mui-btn--raised 	mui-btn--primary"> 
+			</form>
+		</div>
 		<div class="mui-appbar">
 			<table width="100%">
 				<tr style="vertical-align:middle;">
@@ -30,7 +35,6 @@
 				</tr>
 			</table>
 		</div>			
-		<div class="mui--text-headline" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
 		<div align="center">
 			<?php 
 				if (!isset($_POST['validation'])) {// si le bouton de départ a été pressé
@@ -552,7 +556,7 @@
 		Merci d'avoir répondu !
 		</div>
 		<?php 
-			//$_SESSION['tabRep'][11] = $_SESSION['score'];
+			$_SESSION['SF'] = true;
 		?>
 		<form id="formulaire" action="accueil.php" method = "post">
 			<div align="center">
