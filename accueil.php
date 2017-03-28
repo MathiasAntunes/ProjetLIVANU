@@ -19,7 +19,17 @@
 				$_SESSION['alim'] = false;
 				$_SESSION['epices'] = false;
 			}
+			if(isset($_POST['Prec0SF']) and $_SESSION['SF'] == false;){
+				$_SESSION['tabRepSF']= array(" "," "," "," "," "," "," "," "," "," "," "," ");
+			}
+			if(isset($_POST['Prec0alim']) and $_SESSION['alim'] == false){
+				$_SESSION['tabRepAlim'] = array(" "," "," "," "," "," "," "," "," "," ");
+			}
+			if(isset($_POST['Prec0epices']) = $_SESSION['epices'] = false){
+				$_SESSION['tabRepEpices'] = array(" "," "," "," "," "," "," "," "," "," "," "," ");	
+			}
 		?>
+		
 		<div class="mui--text-display2" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
 		<div align="right">
 			<form id="changePat" action="index.html" >
