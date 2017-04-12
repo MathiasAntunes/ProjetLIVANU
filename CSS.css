@@ -812,7 +812,7 @@ footer {
 
 .mui-btn--danger:hover, .mui-btn--danger:focus, .mui-btn--danger:active {
   color: #FFF;
-  background-color: #f55a4e;
+  background-color: #01D758;
 }
 
 .mui-btn--danger[disabled]:hover, .mui-btn--danger[disabled]:focus, .mui-btn--danger[disabled]:active {
@@ -866,10 +866,17 @@ footer {
 }
 
 .mui-btn--small {
-  height: 30.6px;
-  line-height: 30.6px;
-  padding: 0 16px;
-  font-size: 13px;
+  height: 85px;
+  line-height: 85px;
+  padding: 0 45px;
+  font-size: 28px;
+}
+
+.mui-btn--small2 {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 52px;
+  font-size: 20px;
 }
 
 .mui-btn--large {
@@ -878,6 +885,7 @@ footer {
   padding: 0 52px;
   font-size: 28px;
 }
+
 
 .mui-btn--fab.mui-btn--small {
   width: 44px;

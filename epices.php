@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8"/>
 			<title>EPICES</title>
-			<title>Projet LIVANU</title>
+			<title>Projet LIVANUT</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css" />
 	</head>
 	<body>
@@ -23,8 +23,8 @@
 		?>
 		<div class="mui--text-display2" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
 		<div align="right">
-			<form id="changePat" action="index.html" >
-				<input type="submit" name="chPat" value="Changer de patient" class="mui-btn mui-btn--small mui-btn--raised 	mui-btn--primary"> 
+			<form id="changePat" action="fichier.php" >
+				<input type="submit" name="chPat" value="Changer de patient" class="mui-btn mui-btn--small2 mui-btn--raised 	mui-btn--primary"> 
 			</form>
 		</div>
 		<div class="mui-appbar">
@@ -36,12 +36,12 @@
 		</div>	
 		<div align="center">
 			<?php 
-				if (!isset($_POST['validation']) or isset($_POST['Prec1'])) {// si le bouton de départ a été pressé
+				if (!isset($_POST['validation']) or isset($_POST['Prec1'])) {// si le bouton de départ a été pressé, corriger score
 					$_SESSION['tabRepEpices'][0] = 75.14;
 			?>
 			<div align="left">
 				<form id="formu" action="accueil.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Retour" name="Prec0epices"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Retour" name="Prec0epices"/>
 				</form>
 			</div>
 			<div class="mui--text-display2">
@@ -72,6 +72,9 @@
 			</form>
 			<?php //debut question2
 				} elseif (isset($_POST['Non1']) or isset($_POST['Oui1']) or isset($_POST['Prec2'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
+					if (isset($_POST['Prec2']) and $_SESSION['tabRepEpices'][1] == "Oui"){
+						$_SESSION['tabRepEpices'][0] -= 10.06;
+					}
 					if (isset($_POST['Non1'])) { //si la précédente réponse a été Non
 						$_SESSION['tabRepEpices'][1] = "Non";
 					} 
@@ -82,7 +85,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="epices.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec1"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec1"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -116,6 +119,9 @@
 			
 			<?php //debut question3
 				} elseif (isset($_POST['Non2']) or isset($_POST['Oui2']) or isset($_POST['Prec3'])){
+					if (isset($_POST['Prec3']) and $_SESSION['tabRepEpices'][2] == "Oui"){
+						$_SESSION['tabRepEpices'][0] += 11.83;
+					}
 					if (isset($_POST['Non2'])) {
 						$_SESSION['tabRepEpices'][2] = "Non";
 					} 
@@ -126,7 +132,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="epices.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec2"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec2"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -160,6 +166,9 @@
 			
 			<?php //debut question4
 				} elseif (isset($_POST['Non3']) or isset($_POST['Oui3']) or isset($_POST['Prec4'])){
+					if (isset($_POST['Prec4']) and $_SESSION['tabRepEpices'][3] == "Oui"){
+						$_SESSION['tabRepEpices'][0] += 8.28;
+					}
 					if (isset($_POST['Non3'])) {
 						$_SESSION['tabRepEpices'][3] = "Non";
 					} 
@@ -170,7 +179,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="epices.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec3"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec3"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -204,6 +213,9 @@
 			
 			<?php //debut question5
 				} elseif (isset($_POST['Non4']) or isset($_POST['Oui4']) or isset($_POST['Prec5'])){
+					if (isset($_POST['Prec5']) and $_SESSION['tabRepEpices'][4] == "Oui"){
+						$_SESSION['tabRepEpices'][0] += 8.28;
+					}
 					if (isset($_POST['Non4'])) {
 						$_SESSION['tabRepEpices'][4] = "Non";
 					} 
@@ -214,7 +226,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="epices.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec4"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec4"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -248,6 +260,9 @@
 			
 			<?php //debut question6
 				} elseif (isset($_POST['Non5']) or isset($_POST['Oui5']) or isset($_POST['Prec6'])){
+					if (isset($_POST['Prec6']) and $_SESSION['tabRepEpices'][5] == "Oui"){
+						$_SESSION['tabRepEpices'][0] -= 14.8;
+					}
 					if (isset($_POST['Non5'])) {
 						$_SESSION['tabRepEpices'][5] = "Non";
 					} 
@@ -258,7 +273,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="epices.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec5"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec5"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -292,6 +307,9 @@
 			
 			<?php //debut question7
 				} elseif (isset($_POST['Non6']) or isset($_POST['Oui6']) or isset($_POST['Prec7'])){
+					if (isset($_POST['Prec7']) and $_SESSION['tabRepEpices'][6] == "Oui"){
+						$_SESSION['tabRepEpices'][0] += 6.51;
+					}
 					if (isset($_POST['Non6'])) {
 						$_SESSION['tabRepEpices'][6] = "Non";
 					} 
@@ -302,7 +320,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="epices.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec6"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec6"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -336,6 +354,9 @@
 			
 			<?php //debut question8
 				} elseif (isset($_POST['Non7']) or isset($_POST['Oui7']) or isset($_POST['Prec8'])){
+					if (isset($_POST['Prec8']) and $_SESSION['tabRepEpices'][7] == "Oui"){
+						$_SESSION['tabRepEpices'][0] += 7.10;
+					}
 					if (isset($_POST['Non7'])) {
 						$_SESSION['tabRepEpices'][7] = "Non";
 					} 
@@ -346,7 +367,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="epices.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec7"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec7"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -380,6 +401,9 @@
 			
 			<?php //debut question9
 				} elseif (isset($_POST['Non8']) or isset($_POST['Oui8']) or isset($_POST['Prec9'])){
+					if (isset($_POST['Prec9']) and $_SESSION['tabRepEpices'][8] == "Oui"){
+						$_SESSION['tabRepEpices'][0] += 7.10;
+					}
 					if (isset($_POST['Non8'])) {
 						$_SESSION['tabRepEpices'][8] = "Non";
 					} 
@@ -390,7 +414,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="epices.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec8"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec8"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -424,6 +448,9 @@
 			
 			<?php //debut question10
 				} elseif (isset($_POST['Non9']) or isset($_POST['Oui9']) or isset($_POST['Prec10'])){
+					if (isset($_POST['Prec10']) and $_SESSION['tabRepEpices'][9] == "Oui"){
+						$_SESSION['tabRepEpices'][0] += 9.47;
+					}
 					if (isset($_POST['Non9'])) {
 						$_SESSION['tabRepEpices'][9] = "Non";
 					} 
@@ -434,7 +461,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="epices.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec9"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec9"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -468,6 +495,9 @@
 			
 			<?php //debut question11
 				} elseif (isset($_POST['Non10']) or isset($_POST['Oui10']) or isset($_POST['Prec11'])){
+					if (isset($_POST['Prec11']) and $_SESSION['tabRepEpices'][10] == "Oui"){
+						$_SESSION['tabRepEpices'][0] += 9.47;
+					}
 					if (isset($_POST['Non10'])) {
 						$_SESSION['tabRepEpices'][10] = "Non";
 					} 
@@ -478,7 +508,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="epices.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec10"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec10"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -512,9 +542,12 @@
 			
 			<?php
 				} elseif (isset($_POST['Non11']) or isset($_POST['Oui11'])){
+					if ($_SESSION['tabRepEpices'][11] == "Oui"){
+						$_SESSION['tabRepEpices'][0] += 7.10;
+					}
 					if (isset($_POST['Non11'])) {
 						$_SESSION['tabRepEpices'][11] = "Non";
-					} 
+					}
 					if (isset($_POST['Oui11'])) {
 						$_SESSION['tabRepEpices'][11] = "Oui";
 						$_SESSION['tabRepEpices'][0] -= 7.10;
@@ -522,7 +555,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="epices.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec11"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec11"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -537,11 +570,6 @@
 			<form id="formulaire" action="accueil.php" method = "post">
 				<div align="center">
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Changer de questionnaire"/>
-				</div>
-			</form>
-			<form id="formulaire" action="fichier.php" method = "post">
-				<div align="center">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Enregistrer les réponses" name = "Enregistre"/>
 				</div>
 			</form>
 			<?php 

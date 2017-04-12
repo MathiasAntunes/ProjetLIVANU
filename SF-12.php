@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8"/>
 			<title>SF-12</title>
-			<title>Projet LIVANU</title>
+			<title>Projet LIVANUT</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css" />
 	</head>
 	<body>
@@ -24,8 +24,8 @@
 		?>
 		<div class="mui--text-display2" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
 		<div align="right">
-			<form id="changePat" action="index.html" >
-				<input type="submit" name="chPat" value="Changer de patient" class="mui-btn mui-btn--small mui-btn--raised 	mui-btn--primary"> 
+			<form id="changePat" action="fichier.php" >
+				<input type="submit" name="chPat" value="Changer de patient" class="mui-btn mui-btn--small2 mui-btn--raised 	mui-btn--primary"> 
 			</form>
 		</div>
 		<div class="mui-appbar">
@@ -42,7 +42,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="accueil.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Retour" name="Prec0SF"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Retour" name="Prec0SF"/>
 				</form>
 			</div>
 			<div class="mui--text-display2">
@@ -90,7 +90,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="SF-12.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec1"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec1"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -136,7 +136,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="SF-12.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec2"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec2"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -182,7 +182,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="SF-12.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec3"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec3"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -231,7 +231,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="SF-12.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec4"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec4"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -280,7 +280,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="SF-12.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec5"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec5"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -329,7 +329,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="SF-12.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec6"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec6"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -378,7 +378,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="SF-12.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec7"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec7"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -427,7 +427,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="SF-12.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec8"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec8"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -476,7 +476,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="SF-12.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec9"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec9"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -525,7 +525,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="SF-12.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec10"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec10"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -574,7 +574,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="SF-12.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec11"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec11"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -623,7 +623,7 @@
 			?>
 			<div align="left">
 				<form id="formu" action="SF-12.php" method="post">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec12"/>
+					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec12"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
@@ -638,11 +638,6 @@
 			<form id="formulaire" action="accueil.php" method = "post">
 				<div align="center">
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Changer de questionnaire" />
-				</div>
-			</form>
-			<form id="formulaire" action="fichier.php" method = "post">
-				<div align="center">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Enregistrer les réponses" name = "Enregistre"/>
 				</div>
 			</form>
 			<?php 
