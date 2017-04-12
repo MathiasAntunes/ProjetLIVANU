@@ -2,21 +2,31 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-			<title>Projet LIVANU</title>
+			<title>Projet LIVANUT</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css"/>
 	</head>
+	<p id="demo"></p>
+
+	<script language="Javascript">
+		function Confirmtest() {
+			 alert("Attention ! Vous allez refaire un questionnaire deja rempli. Si vous ne souhaitez pas la refaire, appuyer sur retour après avoir fermé ce message. Sinon, poursuivez.");
+		}
+	</script>
 	<!-- regarde jQuesry ui pour faire un pop up, etes-vous sure ? -->
 	<body>
 		<?php
-			if ($_POST['selection'] == "EPICES") {
+			if (isset($_POST['selection'])){
+				if ($_POST['selection'] == "EPICES") {
 				header('Location: epices.php'); 
+				}
+				if ($_POST['selection'] == "SF-12") {
+					header('Location: SF-12.php');
+				}
+				if ($_POST['selection'] == "Alimentation") {
+					header('Location: alim.php'); 
+				}
 			}
-			if ($_POST['selection'] == "SF-12") {
-				header('Location: SF-12.php');
-			}
-			if ($_POST['selection'] == "Alimentation") {
-				header('Location: alim.php'); 
-			}
+			
 			if (isset($_POST['go'])){
 				$_SESSION['PatDate'][0] = ucfirst(strtolower($_POST['nomP']));
 				$_SESSION['PatDate'][1] = ucfirst(strtolower($_POST['prenomP']));
@@ -34,22 +44,21 @@
 			if(isset($_POST['Prec0alim']) and $_SESSION['alim'] == false){
 				$_SESSION['tabRepAlim'] = array(" "," "," "," "," "," "," "," "," "," ");
 			}
-			if(isset($_POST['Prec0epices']) == $_SESSION['epices'] = false){
+			if(isset($_POST['Prec0epices']) and $_SESSION['epices'] == false){
 				$_SESSION['tabRepEpices'] = array(" "," "," "," "," "," "," "," "," "," "," "," ");	
 			}
 		?>
-		
 		<div class="mui--text-display2" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
 		<div align="right">
-			<form id="changePat" action="index.html" >
-				<input type="submit" name="chPat" value="Changer de patient" class="mui-btn mui-btn--small mui-btn--raised 	mui-btn--primary"> 
+			<form id="changePat" action="fichier.php" >
+				<input type="submit" name="chPat" value="Changer de patient" class="mui-btn mui-btn--small2 mui-btn--raised 	mui-btn--primary"> 
 			</form>
 		</div>
 		<div class="mui-appbar">
 			<div align="center">
 				<table width="100%">
 					<tr style="vertical-align:middle;">
-						<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Etude LIVANU</td>
+						<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Etude LIVANUT</td>
 					</tr>
 				</table>
 			</div>
@@ -71,8 +80,9 @@
 			<br>
 			<br>
 			<br>
-			<form id="formulaire" action="accueil.php" method = "post">
+			<form id="formulaire" action="accueil.php" method = "post" onsubmit="return ConfirmTest">
 				<div>
+
 					<?php
 						if ($_SESSION['epices'] == false) {
 					?>
@@ -80,7 +90,7 @@
 					<?php 
 						} else {
 					?>	
-					<input type="submit" name="selection" value="EPICES" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger">
+					<input type="submit" name="selection" value="EPICES" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger" onclick="Confirmtest()">
 					<?php
 						}
 					?>
@@ -91,7 +101,7 @@
 					<?php 
 						} else {
 					?>	
-					<input type="submit" name="selection" value="SF-12" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger">
+					<input type="submit" name="selection" value="SF-12" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger" onclick="Confirmtest()">
 					<?php
 						}
 					?>
@@ -102,7 +112,7 @@
 					<?php 
 						} else {
 					?>	
-					<input type="submit" name="selection" value="Alimentation" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger">
+					<input type="submit" name="selection" value="Alimentation" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger" onclick="Confirmtest()">
 					<?php
 						}
 					?>
@@ -110,5 +120,6 @@
 				</div>
 			</form>
 		</div>
+		<!-- Afficher des trucs pour décrire un peu chaque test ? -->
 	</body>
 </html>
