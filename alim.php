@@ -92,7 +92,7 @@
 			<?php
 				} elseif (isset($_POST['oui1']) or isset($_POST['non1'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante) ?>
 					<div align="left">
-						<form id="formu" action="SF-12.php" method="post">
+						<form id="formu" action="alim.php" method="post">
 							<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec1"/>
 							<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 						</form>
@@ -174,7 +174,7 @@
 					}			
 			?>
 			<div align="left">
-				<form id="formu" action="SF-12.php" method="post">
+				<form id="formu" action="alim.php" method="post">
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec2"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
@@ -213,7 +213,7 @@
 			<?php
 				} elseif (isset($_POST['oui2']) or isset($_POST['non2'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante) ?>
 					<div align="left">
-						<form id="formu" action="SF-12.php" method="post">
+						<form id="formu" action="alim.php" method="post">
 							<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec3"/>
 							<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 						</form>
@@ -295,7 +295,7 @@
 					}			
 			?>
 			<div align="left">
-				<form id="formu" action="SF-12.php" method="post">
+				<form id="formu" action="alim.php" method="post">
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec4"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
@@ -334,7 +334,7 @@
 			<?php
 				} elseif (isset($_POST['oui3']) or isset($_POST['non3'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante) ?>
 					<div align="left">
-						<form id="formu" action="SF-12.php" method="post">
+						<form id="formu" action="alim.php" method="post">
 							<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec5"/>
 							<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 						</form>
@@ -416,7 +416,7 @@
 					}			
 			?>
 			<div align="left">
-				<form id="formu" action="SF-12.php" method="post">
+				<form id="formu" action="alim.php" method="post">
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec6"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
@@ -455,7 +455,7 @@
 			<?php
 				} elseif (isset($_POST['oui4']) or isset($_POST['non4'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante) ?>
 					<div align="left">
-						<form id="formu" action="SF-12.php" method="post">
+						<form id="formu" action="alim.php" method="post">
 							<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec7"/>
 							<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 						</form>
@@ -537,7 +537,7 @@
 					}			
 			?>
 			<div align="left">
-				<form id="formu" action="SF-12.php" method="post">
+				<form id="formu" action="alim.php" method="post">
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec8"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
@@ -576,7 +576,7 @@
 			<?php
 				} elseif (isset($_POST['oui5']) or isset($_POST['non5'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante) ?>
 					<div align="left">
-						<form id="formu" action="SF-12.php" method="post">
+						<form id="formu" action="alim.php" method="post">
 							<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec9"/>
 							<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 						</form>
@@ -658,7 +658,7 @@
 					}			
 			?>
 			<div align="left">
-				<form id="formu" action="SF-12.php" method="post">
+				<form id="formu" action="alim.php" method="post">
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec10"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
@@ -697,7 +697,7 @@
 			<?php
 				} elseif (isset($_POST['oui6']) or isset($_POST['non6'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante) ?>
 					<div align="left">
-						<form id="formu" action="SF-12.php" method="post">
+						<form id="formu" action="alim.php" method="post">
 							<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec11"/>
 							<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 						</form>
@@ -779,7 +779,7 @@
 					}			
 			?>
 			<div align="left">
-				<form id="formu" action="SF-12.php" method="post">
+				<form id="formu" action="alim.php" method="post">
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec12"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
@@ -818,7 +818,7 @@
 			<?php
 				} elseif (isset($_POST['oui7']) or isset($_POST['non7'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante) ?>
 					<div align="left">
-						<form id="formu" action="SF-12.php" method="post">
+						<form id="formu" action="alim.php" method="post">
 							<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec13"/>
 							<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 						</form>
@@ -900,7 +900,7 @@
 					}			
 			?>
 			<div align="left">
-				<form id="formu" action="SF-12.php" method="post">
+				<form id="formu" action="alim.php" method="post">
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec14"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
@@ -939,7 +939,7 @@
 			<?php
 				} elseif (isset($_POST['oui8']) or isset($_POST['non8'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante) ?>
 					<div align="left">
-						<form id="formu" action="SF-12.php" method="post">
+						<form id="formu" action="alim.php" method="post">
 							<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec15"/>
 							<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 						</form>
@@ -1021,7 +1021,7 @@
 					}			
 			?>
 			<div align="left">
-				<form id="formu" action="SF-12.php" method="post">
+				<form id="formu" action="alim.php" method="post">
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec16"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
@@ -1060,7 +1060,7 @@
 			<?php
 				} elseif (isset($_POST['oui9']) or isset($_POST['non9'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante) ?>
 					<div align="left">
-						<form id="formu" action="SF-12.php" method="post">
+						<form id="formu" action="alim.php" method="post">
 							<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec17"/>
 							<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 						</form>
@@ -1142,7 +1142,7 @@
 					}			
 			?>
 			<div align="left">
-				<form id="formu" action="SF-12.php" method="post">
+				<form id="formu" action="alim.php" method="post">
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec18"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
@@ -1181,7 +1181,7 @@
 			<?php
 				} elseif (isset($_POST['oui10']) or isset($_POST['non10'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante) ?>
 					<div align="left">
-						<form id="formu" action="SF-12.php" method="post">
+						<form id="formu" action="alim.php" method="post">
 							<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec19"/>
 							<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 						</form>
@@ -1263,7 +1263,7 @@
 					}			
 			?>
 			<div align="left">
-				<form id="formu" action="SF-12.php" method="post">
+				<form id="formu" action="alim.php" method="post">
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Question précédente" name="Prec20"/>
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>

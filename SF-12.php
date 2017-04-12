@@ -37,7 +37,7 @@
 		</div>			
 		<div align="center">
 			<?php 
-				if (!isset($_POST['validation']) or isset($_POST['prec1'])) {// si le bouton de départ a été pressé
+				if (!isset($_POST['validation']) or isset($_POST['Prec1'])) {// si le bouton de départ a été pressé
 					//$_SESSION['score'] = 75.14;
 			?>
 			<div align="left">
@@ -77,7 +77,7 @@
 				</div>
 			</form>
 			<?php //debut question2
-				} elseif (isset($_POST['Exce1']) or isset($_POST['TB1']) or isset($_POST['B1']) or isset($_POST['Méd1']) or isset($_POST['Mauv1']) or isset($_POST['prec2'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
+				} elseif (isset($_POST['Exce1']) or isset($_POST['TB1']) or isset($_POST['B1']) or isset($_POST['Méd1']) or isset($_POST['Mauv1']) or isset($_POST['Prec2'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 					if (isset($_POST['Exce1'])) { 
 						$_SESSION['tabRepSF'][0] = "Excellente";
 					} elseif (isset($_POST['TB1'])) { 
@@ -128,7 +128,7 @@
 			
 			
 			<?php //debut question3
-				} elseif (isset($_POST['Oui,bcp2']) or isset($_POST['Oui,peu2']) or isset($_POST['Non2']) or isset($_POST['prec3'])){
+				} elseif (isset($_POST['Oui,bcp2']) or isset($_POST['Oui,peu2']) or isset($_POST['Non2']) or isset($_POST['Prec3'])){
 					if (isset($_POST['Non2'])) {
 						$_SESSION['tabRepSF'][1] = "Non, pas du tout limite";
 					} elseif (isset($_POST['Oui,bcp2'])) {
@@ -176,7 +176,7 @@
 			
 			
 			<?php //debut question4
-				} elseif (isset($_POST['Oui,bcp3']) or isset($_POST['Oui,peu3']) or isset($_POST['Non3']) or isset($_POST['prec4'])){
+				} elseif (isset($_POST['Oui,bcp3']) or isset($_POST['Oui,peu3']) or isset($_POST['Non3']) or isset($_POST['Prec4'])){
 					if (isset($_POST['Non3'])) {
 						$_SESSION['tabRepSF'][2] = "Non, pas du tout limite";
 					} elseif (isset($_POST['Oui,bcp3'])) {
@@ -224,7 +224,7 @@
 				</div>
 			</form>
 			<?php //debut question 5
-				} elseif (isset($_POST['tjrs4']) or isset($_POST['plupart4']) or isset($_POST['svt4']) or isset($_POST['prf4']) or isset($_POST['jms4']) or isset($_POST['prec5'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
+				} elseif (isset($_POST['tjrs4']) or isset($_POST['plupart4']) or isset($_POST['svt4']) or isset($_POST['prf4']) or isset($_POST['jms4']) or isset($_POST['Prec5'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 					if (isset($_POST['tjrs4'])) { 
 						$_SESSION['tabRepSF'][3] = "Toujours";
 					} elseif (isset($_POST['plupart4'])) { 
@@ -275,7 +275,7 @@
 				</div>
 			</form>
 			<?php //debut question 6
-				} elseif (isset($_POST['tjrs5']) or isset($_POST['plupart5']) or isset($_POST['svt5']) or isset($_POST['prf5']) or isset($_POST['jms5']) or isset($_POST['prec6'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
+				} elseif (isset($_POST['tjrs5']) or isset($_POST['plupart5']) or isset($_POST['svt5']) or isset($_POST['prf5']) or isset($_POST['jms5']) or isset($_POST['Prec6'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 					if (isset($_POST['tjrs5'])) { 
 						$_SESSION['tabRepSF'][4] = "Toujours";
 					} elseif (isset($_POST['plupart5'])) { 
@@ -326,7 +326,7 @@
 				</div>
 			</form>
 			<?php //debut question 7
-				} elseif (isset($_POST['tjrs6']) or isset($_POST['plupart6']) or isset($_POST['svt6']) or isset($_POST['prf6']) or isset($_POST['jms6']) or isset($_POST['prec7'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
+				} elseif (isset($_POST['tjrs6']) or isset($_POST['plupart6']) or isset($_POST['svt6']) or isset($_POST['prf6']) or isset($_POST['jms6']) or isset($_POST['Prec7'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 					if (isset($_POST['tjrs6'])) { 
 						$_SESSION['tabRepSF'][5] = "Toujours";
 					} elseif (isset($_POST['plupart6'])) { 
@@ -377,7 +377,7 @@
 				</div>
 			</form>
 			<?php //debut question 8
-				} elseif (isset($_POST['tjrs7']) or isset($_POST['plupart7']) or isset($_POST['svt7']) or isset($_POST['prf7']) or isset($_POST['jms7']) or isset($_POST['prec8'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
+				} elseif (isset($_POST['tjrs7']) or isset($_POST['plupart7']) or isset($_POST['svt7']) or isset($_POST['prf7']) or isset($_POST['jms7']) or isset($_POST['Prec8'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 					if (isset($_POST['tjrs7'])) { 
 						$_SESSION['tabRepSF'][6] = "Toujours";
 					} elseif (isset($_POST['plupart7'])) { 
@@ -428,7 +428,7 @@
 				</div>
 			</form>
 			<?php //debut question 9
-				} elseif (isset($_POST['pdt8']) or isset($_POST['petit8']) or isset($_POST['moy8']) or isset($_POST['bcp8']) or isset($_POST['enorm8']) or isset($_POST['prec9'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
+				} elseif (isset($_POST['pdt8']) or isset($_POST['petit8']) or isset($_POST['moy8']) or isset($_POST['bcp8']) or isset($_POST['enorm8']) or isset($_POST['Prec9'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 					if (isset($_POST['pdt8'])) { 
 						$_SESSION['tabRepSF'][7] = "Pas du tout";
 					} elseif (isset($_POST['petit8'])) { 
@@ -479,7 +479,7 @@
 				</div>
 			</form>
 			<?php //debut question 10
-				} elseif (isset($_POST['tjrs9']) or isset($_POST['plupart9']) or isset($_POST['svt9']) or isset($_POST['prf9']) or isset($_POST['jms9']) or isset($_POST['prec10'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
+				} elseif (isset($_POST['tjrs9']) or isset($_POST['plupart9']) or isset($_POST['svt9']) or isset($_POST['prf9']) or isset($_POST['jms9']) or isset($_POST['Prec10'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 					if (isset($_POST['tjrs9'])) { 
 						$_SESSION['tabRepSF'][8] = "Toujours";
 					} elseif (isset($_POST['plupart9'])) { 
@@ -530,7 +530,7 @@
 				</div>
 			</form>
 			<?php //debut question 11
-				} elseif (isset($_POST['tjrs10']) or isset($_POST['plupart10']) or isset($_POST['svt10']) or isset($_POST['prf10']) or isset($_POST['jms10']) or isset($_POST['prec11'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
+				} elseif (isset($_POST['tjrs10']) or isset($_POST['plupart10']) or isset($_POST['svt10']) or isset($_POST['prf10']) or isset($_POST['jms10']) or isset($_POST['Prec11'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 					if (isset($_POST['tjrs10'])) { 
 						$_SESSION['tabRepSF'][9] = "Toujours";
 					} elseif (isset($_POST['plupart10'])) { 
@@ -581,7 +581,7 @@
 				</div>
 			</form>
 			<?php //debut question 12
-				} elseif (isset($_POST['tjrs11']) or isset($_POST['plupart11']) or isset($_POST['svt11']) or isset($_POST['prf11']) or isset($_POST['jms11']) or isset($_POST['prec12'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
+				} elseif (isset($_POST['tjrs11']) or isset($_POST['plupart11']) or isset($_POST['svt11']) or isset($_POST['prf11']) or isset($_POST['jms11']) or isset($_POST['Prec12'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 					if (isset($_POST['tjrs11'])) { 
 						$_SESSION['tabRepSF'][10] = "Toujours";
 					} elseif (isset($_POST['plupart11'])) { 
@@ -632,7 +632,7 @@
 				</div>
 			</form>
 			<?php //debut fin
-				} elseif (isset($_POST['tjrs12']) or isset($_POST['plupart12']) or isset($_POST['svt12']) or isset($_POST['prf12']) or isset($_POST['jms12']) or isset($_POST['prec13'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
+				} elseif (isset($_POST['tjrs12']) or isset($_POST['plupart12']) or isset($_POST['svt12']) or isset($_POST['prf12']) or isset($_POST['jms12']) or isset($_POST['Prec13'])) { //si sur la question précédente un des boutons a été pressé (passage à la question suivante)
 					if (isset($_POST['tjrs12'])) { 
 						$_SESSION['tabRepSF'][11] = "Toujours";
 					} elseif (isset($_POST['plupart12'])) { 
