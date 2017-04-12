@@ -119,11 +119,12 @@
 					
 				</div>
 			</form>
+			</br></br>
 			<?php
 				if ($_SESSION['SF'] == true and $_SESSION['alim'] == true and $_SESSION['epices'] == true) {
 			?>
 				<form id="fini" action="fichier.php" method="post">
-					<input type="submit" name="fin" value="Enregistrer les données et finir" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger">
+					<input type="submit" name="fin" value="Enregistrer les données et finir" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--primary">
 				</form>
 			<?php 
 				}
