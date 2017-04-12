@@ -5,6 +5,13 @@
 			<title>Projet LIVANU</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css"/>
 	</head>
+	<p id="demo"></p>
+
+	<script>
+	function Confirmtest() {
+	     alert("Attention ! Vous allez refaire un questionnaire deja rempli. Si vous ne souhaitez pas la refaire, appuyer sur retour après avoir fermé ce message.");
+	}
+	</script>
 	<!-- regarde jQuesry ui pour faire un pop up, etes-vous sure ? -->
 	<body>
 		<?php
@@ -64,6 +71,7 @@
 			<br>
 			<form id="formulaire" action="choix_questionnaire.php" method = "post">
 				<div>
+
 					<?php
 						if ($_SESSION['epices'] == false) {
 					?>
@@ -71,7 +79,7 @@
 					<?php 
 						} else {
 					?>	
-					<input type="submit" name="selection" value="EPICES" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger">
+					<input type="submit" name="selection" value="EPICES" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger" onclick="Confirmtest()">
 					<?php
 						}
 					?>
@@ -82,7 +90,7 @@
 					<?php 
 						} else {
 					?>	
-					<input type="submit" name="selection" value="SF-12" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger">
+					<input type="submit" name="selection" value="SF-12" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger" onclick="Confirmtest()">
 					<?php
 						}
 					?>
@@ -93,7 +101,7 @@
 					<?php 
 						} else {
 					?>	
-					<input type="submit" name="selection" value="Alimentation" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger">
+					<input type="submit" name="selection" value="Alimentation" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger" onclick="Confirmtest()">
 					<?php
 						}
 					?>
