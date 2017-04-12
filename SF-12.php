@@ -654,6 +654,8 @@
 			<div class="mui--text-display2">
 			<br>
 			<br>
+			<br>
+			<br>
 			Merci d'avoir répondu !
 			</div>
 			<?php 

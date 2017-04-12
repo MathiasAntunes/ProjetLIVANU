@@ -101,6 +101,8 @@
 						<div class="mui--text-display2">
 							<br>
 							<br>
+							<br>
+							<br>
 							<?php
 								echo "$ques11";
 							?>
@@ -182,6 +184,8 @@
 			<div class="mui--text-display2">
 				<br>
 				<br>
+				<br>
+				<br>
 				Question 2 :
 				<br>
 				<?php
@@ -222,6 +226,8 @@
 						<div class="mui--text-display2">
 							<br>
 							<br>
+							<br>
+							<br>
 							<?php
 								echo "$ques11";
 							?>
@@ -249,6 +255,8 @@
 					} elseif (isset($_POST['non2'])) { 
 				?>
 						<div class="mui--text-display2">
+							<br>
+							<br>
 							<br>
 							<br>
 							<?php
@@ -303,6 +311,8 @@
 			<div class="mui--text-display2">
 				<br>
 				<br>
+				<br>
+				<br>
 				Question 3 :
 				<br>
 				<?php
@@ -343,6 +353,8 @@
 						<div class="mui--text-display2">
 							<br>
 							<br>
+							<br>
+							<br>
 							<?php
 								echo "$ques11";
 							?>
@@ -370,6 +382,8 @@
 					} elseif (isset($_POST['non3'])) { 
 				?>
 						<div class="mui--text-display2">
+							<br>
+							<br>
 							<br>
 							<br>
 							<?php
@@ -424,6 +438,8 @@
 			<div class="mui--text-display2">
 				<br>
 				<br>
+				<br>
+				<br>
 				Question 4 :
 				<br>
 				<?php
@@ -464,6 +480,8 @@
 						<div class="mui--text-display2">
 							<br>
 							<br>
+							<br>
+							<br>
 							<?php
 								echo "$ques11";
 							?>
@@ -491,6 +509,8 @@
 					} elseif (isset($_POST['non4'])) { 
 				?>
 						<div class="mui--text-display2">
+							<br>
+							<br>
 							<br>
 							<br>
 							<?php
@@ -545,6 +565,8 @@
 			<div class="mui--text-display2">
 				<br>
 				<br>
+				<br>
+				<br>
 				Question 5 :
 				<br>
 				<?php
@@ -585,6 +607,8 @@
 						<div class="mui--text-display2">
 							<br>
 							<br>
+							<br>
+							<br>
 							<?php
 								echo "$ques11";
 							?>
@@ -612,6 +636,8 @@
 					} elseif (isset($_POST['non5'])) { 
 				?>
 						<div class="mui--text-display2">
+							<br>
+							<br>
 							<br>
 							<br>
 							<?php
@@ -666,6 +692,8 @@
 			<div class="mui--text-display2">
 				<br>
 				<br>
+				<br>
+				<br>
 				Question 6 :
 				<br>
 				<?php
@@ -706,6 +734,8 @@
 						<div class="mui--text-display2">
 							<br>
 							<br>
+							<br>
+							<br>
 							<?php
 								echo "$ques11";
 							?>
@@ -733,6 +763,8 @@
 					} elseif (isset($_POST['non6'])) { 
 				?>
 						<div class="mui--text-display2">
+							<br>
+							<br>
 							<br>
 							<br>
 							<?php
@@ -787,6 +819,8 @@
 			<div class="mui--text-display2">
 				<br>
 				<br>
+				<br>
+				<br>
 				Question 7 :
 				<br>
 				<?php
@@ -827,6 +861,8 @@
 						<div class="mui--text-display2">
 							<br>
 							<br>
+							<br>
+							<br>
 							<?php
 								echo "$ques11";
 							?>
@@ -854,6 +890,8 @@
 					} elseif (isset($_POST['non7'])) { 
 				?>
 						<div class="mui--text-display2">
+							<br>
+							<br>
 							<br>
 							<br>
 							<?php
@@ -908,6 +946,8 @@
 			<div class="mui--text-display2">
 				<br>
 				<br>
+				<br>
+				<br>
 				Question 8 :
 				<br>
 				<?php
@@ -948,6 +988,8 @@
 						<div class="mui--text-display2">
 							<br>
 							<br>
+							<br>
+							<br>
 							<?php
 								echo "$ques11";
 							?>
@@ -975,6 +1017,8 @@
 					} elseif (isset($_POST['non8'])) { 
 				?>
 						<div class="mui--text-display2">
+							<br>
+							<br>
 							<br>
 							<br>
 							<?php
@@ -1029,6 +1073,8 @@
 			<div class="mui--text-display2">
 				<br>
 				<br>
+				<br>
+				<br>
 				Question 9 :
 				<br>
 				<?php
@@ -1069,6 +1115,8 @@
 						<div class="mui--text-display2">
 							<br>
 							<br>
+							<br>
+							<br>
 							<?php
 								echo "$ques11";
 							?>
@@ -1096,6 +1144,8 @@
 					} elseif (isset($_POST['non9'])) { 
 				?>
 						<div class="mui--text-display2">
+							<br>
+							<br>
 							<br>
 							<br>
 							<?php
@@ -1150,6 +1200,8 @@
 			<div class="mui--text-display2">
 				<br>
 				<br>
+				<br>
+				<br>
 				Question 10 :
 				<br>
 				<?php
@@ -1190,6 +1242,8 @@
 						<div class="mui--text-display2">
 							<br>
 							<br>
+							<br>
+							<br>
 							<?php
 								echo "$ques11";
 							?>
@@ -1217,6 +1271,8 @@
 					} elseif (isset($_POST['non10'])) { 
 				?>
 						<div class="mui--text-display2">
+							<br>
+							<br>
 							<br>
 							<br>
 							<?php
@@ -1269,6 +1325,8 @@
 				</form>
 			</div>
 			<div class="mui--text-display2">
+			<br>
+			<br>
 			<br>
 			<br>
 			Merci d'avoir répondu !
