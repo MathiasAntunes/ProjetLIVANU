@@ -47,7 +47,7 @@
 			<div align="center">
 				<table width="100%">
 					<tr style="vertical-align:middle;">
-						<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Etude LIVANU</td>
+						<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Etude LIVANUT</td>
 					</tr>
 				</table>
 			</div>
