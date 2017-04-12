@@ -8,6 +8,15 @@
 	<!-- regarde jQuesry ui pour faire un pop up, etes-vous sure ? -->
 	<body>
 		<?php
+			if ($_POST['selection'] == "EPICES") {
+				header('Location: epices.php'); 
+			}
+			if ($_POST['selection'] == "SF-12") {
+				header('Location: SF-12.php');
+			}
+			if ($_POST['selection'] == "Alimentation") {
+				header('Location: alim.php'); 
+			}
 			if (isset($_POST['go'])){
 				$_SESSION['PatDate'][0] = ucfirst(strtolower($_POST['nomP']));
 				$_SESSION['PatDate'][1] = ucfirst(strtolower($_POST['prenomP']));
@@ -19,13 +28,13 @@
 				$_SESSION['alim'] = false;
 				$_SESSION['epices'] = false;
 			}
-			if(isset($_POST['Prec0SF']) and $_SESSION['SF'] == false;){
+			if(isset($_POST['Prec0SF']) and $_SESSION['SF'] == false){
 				$_SESSION['tabRepSF']= array(" "," "," "," "," "," "," "," "," "," "," "," ");
 			}
 			if(isset($_POST['Prec0alim']) and $_SESSION['alim'] == false){
 				$_SESSION['tabRepAlim'] = array(" "," "," "," "," "," "," "," "," "," ");
 			}
-			if(isset($_POST['Prec0epices']) = $_SESSION['epices'] = false){
+			if(isset($_POST['Prec0epices']) == $_SESSION['epices'] = false){
 				$_SESSION['tabRepEpices'] = array(" "," "," "," "," "," "," "," "," "," "," "," ");	
 			}
 		?>
@@ -62,7 +71,7 @@
 			<br>
 			<br>
 			<br>
-			<form id="formulaire" action="choix_questionnaire.php" method = "post">
+			<form id="formulaire" action="accueil.php" method = "post">
 				<div>
 					<?php
 						if ($_SESSION['epices'] == false) {
