@@ -40,8 +40,6 @@
 				if (!isset($_POST['validation']) or isset($_POST['prec1'])) {// si le bouton de départ a été pressé
 					//$_SESSION['score'] = 75.14;
 			?>
-			<br>
-			<br>
 			<div align="left">
 				<form id="formu" action="accueil.php" method="post">
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Retour" name="Prec0SF"/>
@@ -101,6 +99,8 @@
 			<div class="mui--text-display2">
 			<br>
 			<br>
+			<br>
+			<br>
 			Question 2 :
 
 			<?php
@@ -147,6 +147,8 @@
 			<div class="mui--text-display2">
 			<br>
 			<br>
+			<br>
+			<br>
 			Question 3 :
 
 			<?php
@@ -191,6 +193,8 @@
 				</form>
 			</div>
 			<div class="mui--text-display2">
+			<br>
+			<br>
 			<br>
 			<br>
 			Question 4 :
@@ -242,6 +246,8 @@
 			<div class="mui--text-display2">
 			<br>
 			<br>
+			<br>
+			<br>
 			Question 5 :
 
 			<?php
@@ -289,6 +295,8 @@
 				</form>
 			</div>
 			<div class="mui--text-display2">
+			<br>
+			<br>
 			<br>
 			<br>
 			Question 6 :
@@ -340,6 +348,8 @@
 			<div class="mui--text-display2">
 			<br>
 			<br>
+			<br>
+			<br>
 			Question 7 :
 
 			<?php
@@ -387,6 +397,8 @@
 				</form>
 			</div>
 			<div class="mui--text-display2">
+			<br>
+			<br>
 			<br>
 			<br>
 			Question 8 :
@@ -438,6 +450,8 @@
 			<div class="mui--text-display2">
 			<br>
 			<br>
+			<br>
+			<br>
 			Question 9 :
 
 			<?php
@@ -485,6 +499,8 @@
 				</form>
 			</div>
 			<div class="mui--text-display2">
+			<br>
+			<br>
 			<br>
 			<br>
 			Question 10 :
@@ -536,6 +552,8 @@
 			<div class="mui--text-display2">
 			<br>
 			<br>
+			<br>
+			<br>
 			Question 11 :
 
 			<?php
@@ -583,6 +601,8 @@
 				</form>
 			</div>
 			<div class="mui--text-display2">
+			<br>
+			<br>
 			<br>
 			<br>
 			Question 12 :

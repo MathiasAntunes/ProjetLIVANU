@@ -12,7 +12,6 @@
 			 alert("Attention ! Vous allez refaire un questionnaire deja rempli. Si vous ne souhaitez pas le refaire, appuyer sur retour après avoir fermé ce message. Sinon, poursuivez.");
 		}
 	</script>
-	<!-- regarde jQuesry ui pour faire un pop up, etes-vous sure ? -->
 	<body>
 		<?php
 			if (isset($_POST['selection'])){
