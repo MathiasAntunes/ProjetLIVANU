@@ -9,7 +9,7 @@
 
 	<script>
 	function Confirmtest() {
-	     alert("Attention ! Vous allez refaire un questionnaire deja rempli. Si vous ne souhaitez pas la refaire, appuyer sur retour après avoir fermé ce message.");
+	     alert("Attention ! Vous allez refaire un questionnaire deja rempli. Si vous ne souhaitez pas la refaire, appuyer sur retour après avoir fermé ce message. Sinon, poursuivez.");
 	}
 	</script>
 	<!-- regarde jQuesry ui pour faire un pop up, etes-vous sure ? -->
@@ -109,5 +109,6 @@
 				</div>
 			</form>
 		</div>
+		<!-- Afficher des trucs pour décrire un peu chaque test ? -->
 	</body>
 </html>
