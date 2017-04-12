@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8"/>
 			<title>EPICES</title>
-			<title>Projet LIVANU</title>
+			<title>Projet LIVANUT</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css" />
 	</head>
 	<body>

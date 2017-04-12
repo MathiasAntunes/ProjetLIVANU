@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-			<title>Projet LIVANU</title>
+			<title>Projet LIVANUT</title>
 		<link rel="stylesheet" type="text/css" href="CSS.css"/>
 	</head>
 	<p id="demo"></p>
