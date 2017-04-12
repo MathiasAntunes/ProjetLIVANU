@@ -33,7 +33,7 @@
 			$compl9 = "Cette catégorie comprend par exemple les pizzas, les barquettes préparées, sous vide ou congelées, les cassoulets en conserve, les plats achetés chez le traiteur ainsi que ceux achetés en fast-food et rapportés à la maison, etc.";
 			$compl10 = "Cette catégorie comprend tous les produits sucrés quelque soit leur forme (par exemple : confiserie, barre chocolatée, flans, pain au raisin, mousse au chocolat, etc.) et leur provenance (commerce ou fait maison).";
 		?>
-		<div class="mui--text-display3" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
+		<div class="mui--text-display2" align="right"><?php echo $_SESSION['PatDate'][0]; echo " "; echo $_SESSION['PatDate'][1];echo "  ";?></div>
 		<div align="right">
 			<form id="changePat" action="fichier.php" >
 				<input type="submit" name="chPat" value="Changer de patient" class="mui-btn mui-btn--small2 mui-btn--raised 	mui-btn--primary"> 
@@ -42,7 +42,7 @@
 		<div class="mui-appbar">
 			<table width="100%">
 				<tr style="vertical-align:middle;">
-					<td class="mui--appbar-height mui--text-light mui--text-display4" align="center">Questionnaire ALIMENTATION</td>
+					<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire ALIMENTATION</td>
 				</tr>
 			</table>
 		</div>			
@@ -56,7 +56,7 @@
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Retour" name="Prec0alim"/>
 				</form>
 			</div>
-			<div class="mui--text-display3">
+			<div class="mui--text-display2">
 				<br>
 				<br>
 				Question 1 :
@@ -65,7 +65,7 @@
 					echo "$ques1";
 				?>
 			</div>
-			<div class="mui--text-display2">
+			<div class="mui--text-display1">
 				<?php
 					echo "$compl1";
 				?>
@@ -77,7 +77,7 @@
 			<form id="formulaire" action="alim.php" method = "post">
 				<div align="center">
 					<div>
-						<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+						<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 					</div>
 					<br>
 					<div>
@@ -96,7 +96,7 @@
 						</form>
 					</div>
 					<?php if (isset($_POST['oui1'])) { ?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -110,7 +110,7 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
@@ -125,7 +125,7 @@
 				<?php 
 					} elseif (isset($_POST['non1'])) { 
 				?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -139,13 +139,13 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="4 à 6 fois par semaine" name="4sem1"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="2 à 3 fois par semaine" name="2sem1"/>
-									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par selaine au moins" name="1sem1"/>
+									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par semaine au moins" name="1sem1"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Jamais" name="jms1"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 								</div>
@@ -177,7 +177,7 @@
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
-			<div class="mui--text-display3">
+			<div class="mui--text-display2">
 				<br>
 				<br>
 				Question 2 :
@@ -186,7 +186,7 @@
 					echo "$ques2";
 				?>
 			</div>
-			<div class="mui--text-display2">
+			<div class="mui--text-display1">
 				<?php
 					echo "$compl2";
 				?>
@@ -198,7 +198,7 @@
 			<form id="formulaire" action="alim.php" method = "post">
 				<div align="center">
 					<div>
-						<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+						<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 					</div>
 					<br>
 					<div>
@@ -217,7 +217,7 @@
 						</form>
 					</div>
 					<?php if (isset($_POST['oui2'])) { ?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -231,7 +231,7 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
@@ -246,7 +246,7 @@
 				<?php 
 					} elseif (isset($_POST['non2'])) { 
 				?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -260,13 +260,13 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="4 à 6 fois par semaine" name="4sem2"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="2 à 3 fois par semaine" name="2sem2"/>
-									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par selaine au moins" name="1sem2"/>
+									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par semaine au moins" name="1sem2"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Jamais" name="jms2"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 								</div>
@@ -298,7 +298,7 @@
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
-			<div class="mui--text-display3">
+			<div class="mui--text-display2">
 				<br>
 				<br>
 				Question 3 :
@@ -307,7 +307,7 @@
 					echo "$ques3";
 				?>
 			</div>
-			<div class="mui--text-display2">
+			<div class="mui--text-display1">
 				<?php
 					echo "$compl3";
 				?>
@@ -319,7 +319,7 @@
 			<form id="formulaire" action="alim.php" method = "post">
 				<div align="center">
 					<div>
-						<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+						<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 					</div>
 					<br>
 					<div>
@@ -338,7 +338,7 @@
 						</form>
 					</div>
 					<?php if (isset($_POST['oui3'])) { ?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -352,7 +352,7 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
@@ -367,7 +367,7 @@
 				<?php 
 					} elseif (isset($_POST['non3'])) { 
 				?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -381,13 +381,13 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="4 à 6 fois par semaine" name="4sem3"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="2 à 3 fois par semaine" name="2sem3"/>
-									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par selaine au moins" name="1sem3"/>
+									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par semaine au moins" name="1sem3"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Jamais" name="jms3"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 								</div>
@@ -419,7 +419,7 @@
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
-			<div class="mui--text-display3">
+			<div class="mui--text-display2">
 				<br>
 				<br>
 				Question 4 :
@@ -428,7 +428,7 @@
 					echo "$ques4";
 				?>
 			</div>
-			<div class="mui--text-display2">
+			<div class="mui--text-display1">
 				<?php
 					echo "$compl4";
 				?>
@@ -440,7 +440,7 @@
 			<form id="formulaire" action="alim.php" method = "post">
 				<div align="center">
 					<div>
-						<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+						<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 					</div>
 					<br>
 					<div>
@@ -459,7 +459,7 @@
 						</form>
 					</div>
 					<?php if (isset($_POST['oui4'])) { ?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -473,7 +473,7 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
@@ -488,7 +488,7 @@
 				<?php 
 					} elseif (isset($_POST['non4'])) { 
 				?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -502,13 +502,13 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="4 à 6 fois par semaine" name="4sem4"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="2 à 3 fois par semaine" name="2sem4"/>
-									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par selaine au moins" name="1sem4"/>
+									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par semaine au moins" name="1sem4"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Jamais" name="jms4"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 								</div>
@@ -540,7 +540,7 @@
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
-			<div class="mui--text-display3">
+			<div class="mui--text-display2">
 				<br>
 				<br>
 				Question 5 :
@@ -549,7 +549,7 @@
 					echo "$ques5";
 				?>
 			</div>
-			<div class="mui--text-display2">
+			<div class="mui--text-display1">
 				<?php
 					echo "$compl5";
 				?>
@@ -561,7 +561,7 @@
 			<form id="formulaire" action="alim.php" method = "post">
 				<div align="center">
 					<div>
-						<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+						<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 					</div>
 					<br>
 					<div>
@@ -580,7 +580,7 @@
 						</form>
 					</div>
 					<?php if (isset($_POST['oui5'])) { ?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -594,7 +594,7 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
@@ -609,7 +609,7 @@
 				<?php 
 					} elseif (isset($_POST['non5'])) { 
 				?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -623,13 +623,13 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="4 à 6 fois par semaine" name="4sem5"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="2 à 3 fois par semaine" name="2sem5"/>
-									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par selaine au moins" name="1sem5"/>
+									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par semaine au moins" name="1sem5"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Jamais" name="jms5"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 								</div>
@@ -661,7 +661,7 @@
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
-			<div class="mui--text-display3">
+			<div class="mui--text-display2">
 				<br>
 				<br>
 				Question 6 :
@@ -670,7 +670,7 @@
 					echo "$ques6";
 				?>
 			</div>
-			<div class="mui--text-display2">
+			<div class="mui--text-display1">
 				<?php
 					echo "$compl6";
 				?>
@@ -682,7 +682,7 @@
 			<form id="formulaire" action="alim.php" method = "post">
 				<div align="center">
 					<div>
-						<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+						<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 					</div>
 					<br>
 					<div>
@@ -701,7 +701,7 @@
 						</form>
 					</div>
 					<?php if (isset($_POST['oui6'])) { ?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -715,7 +715,7 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
@@ -730,7 +730,7 @@
 				<?php 
 					} elseif (isset($_POST['non6'])) { 
 				?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -744,13 +744,13 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="4 à 6 fois par semaine" name="4sem6"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="2 à 3 fois par semaine" name="2sem6"/>
-									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par selaine au moins" name="1sem6"/>
+									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par semaine au moins" name="1sem6"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Jamais" name="jms6"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 								</div>
@@ -782,7 +782,7 @@
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
-			<div class="mui--text-display3">
+			<div class="mui--text-display2">
 				<br>
 				<br>
 				Question 7 :
@@ -791,7 +791,7 @@
 					echo "$ques7";
 				?>
 			</div>
-			<div class="mui--text-display2">
+			<div class="mui--text-display1">
 				<?php
 					echo "$compl7";
 				?>
@@ -803,7 +803,7 @@
 			<form id="formulaire" action="alim.php" method = "post">
 				<div align="center">
 					<div>
-						<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+						<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 					</div>
 					<br>
 					<div>
@@ -822,7 +822,7 @@
 						</form>
 					</div>
 					<?php if (isset($_POST['oui7'])) { ?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -836,7 +836,7 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
@@ -851,7 +851,7 @@
 				<?php 
 					} elseif (isset($_POST['non7'])) { 
 				?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -865,13 +865,13 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="4 à 6 fois par semaine" name="4sem7"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="2 à 3 fois par semaine" name="2sem7"/>
-									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par selaine au moins" name="1sem7"/>
+									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par semaine au moins" name="1sem7"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Jamais" name="jms7"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 								</div>
@@ -903,7 +903,7 @@
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
-			<div class="mui--text-display3">
+			<div class="mui--text-display2">
 				<br>
 				<br>
 				Question 8 :
@@ -912,7 +912,7 @@
 					echo "$ques8";
 				?>
 			</div>
-			<div class="mui--text-display2">
+			<div class="mui--text-display1">
 				<?php
 					echo "$compl8";
 				?>
@@ -924,7 +924,7 @@
 			<form id="formulaire" action="alim.php" method = "post">
 				<div align="center">
 					<div>
-						<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+						<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 					</div>
 					<br>
 					<div>
@@ -943,7 +943,7 @@
 						</form>
 					</div>
 					<?php if (isset($_POST['oui8'])) { ?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -957,7 +957,7 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
@@ -972,7 +972,7 @@
 				<?php 
 					} elseif (isset($_POST['non8'])) { 
 				?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -986,13 +986,13 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="4 à 6 fois par semaine" name="4sem8"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="2 à 3 fois par semaine" name="2sem8"/>
-									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par selaine au moins" name="1sem8"/>
+									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par semaine au moins" name="1sem8"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Jamais" name="jms8"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 								</div>
@@ -1024,7 +1024,7 @@
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
-			<div class="mui--text-display3">
+			<div class="mui--text-display2">
 				<br>
 				<br>
 				Question 9 :
@@ -1033,7 +1033,7 @@
 					echo "$ques9";
 				?>
 			</div>
-			<div class="mui--text-display2">
+			<div class="mui--text-display1">
 				<?php
 					echo "$compl9";
 				?>
@@ -1045,7 +1045,7 @@
 			<form id="formulaire" action="alim.php" method = "post">
 				<div align="center">
 					<div>
-						<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+						<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 					</div>
 					<br>
 					<div>
@@ -1064,7 +1064,7 @@
 						</form>
 					</div>
 					<?php if (isset($_POST['oui9'])) { ?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -1078,7 +1078,7 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
@@ -1093,7 +1093,7 @@
 				<?php 
 					} elseif (isset($_POST['non9'])) { 
 				?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -1107,13 +1107,13 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="4 à 6 fois par semaine" name="4sem9"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="2 à 3 fois par semaine" name="2sem9"/>
-									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par selaine au moins" name="1sem9"/>
+									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par semaine au moins" name="1sem9"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Jamais" name="jms9"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 								</div>
@@ -1145,7 +1145,7 @@
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
-			<div class="mui--text-display3">
+			<div class="mui--text-display2">
 				<br>
 				<br>
 				Question 10 :
@@ -1154,7 +1154,7 @@
 					echo "$ques10";
 				?>
 			</div>
-			<div class="mui--text-display2">
+			<div class="mui--text-display1">
 				<?php
 					echo "$compl10";
 				?>
@@ -1166,7 +1166,7 @@
 			<form id="formulaire" action="alim.php" method = "post">
 				<div align="center">
 					<div>
-						<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+						<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 					</div>
 					<br>
 					<div>
@@ -1185,7 +1185,7 @@
 						</form>
 					</div>
 					<?php if (isset($_POST['oui10'])) { ?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -1199,7 +1199,7 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
@@ -1214,7 +1214,7 @@
 				<?php 
 					} elseif (isset($_POST['non10'])) { 
 				?>
-						<div class="mui--text-display3">
+						<div class="mui--text-display2">
 							<br>
 							<br>
 							<?php
@@ -1228,13 +1228,13 @@
 						<form id="formulaire" action="alim.php" method = "post">
 							<div align="center">
 								<div>
-									<label  class="mui--text-display3" for "Nom"> Réponse : </label>
+									<label  class="mui--text-display2" for "Nom"> Réponse : </label>
 								</div>
 								<br>
 								<div>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="4 à 6 fois par semaine" name="4sem10"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="2 à 3 fois par semaine" name="2sem10"/>
-									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par selaine au moins" name="1sem10"/>
+									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="1 fois par semaine au moins" name="1sem10"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Jamais" name="jms10"/>
 									<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 								</div>
@@ -1266,7 +1266,7 @@
 					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="hidden" value="ok" name="validation"/>
 				</form>
 			</div>
-			<div class="mui--text-display3">
+			<div class="mui--text-display2">
 			<br>
 			<br>
 			Merci d'avoir répondu !
@@ -1276,7 +1276,7 @@
 			?>
 			<form id="formulaire" action="accueil.php" method = "post">
 				<div align="center">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Changer de questionnaire" />
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Revenir à l'accueil" />
 				</div>
 			</form>
 			<?php 

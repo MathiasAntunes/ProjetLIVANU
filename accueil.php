@@ -9,7 +9,7 @@
 
 	<script language="Javascript">
 		function Confirmtest() {
-			 alert("Attention ! Vous allez refaire un questionnaire deja rempli. Si vous ne souhaitez pas la refaire, appuyer sur retour après avoir fermé ce message. Sinon, poursuivez.");
+			 alert("Attention ! Vous allez refaire un questionnaire deja rempli. Si vous ne souhaitez pas le refaire, appuyer sur retour après avoir fermé ce message. Sinon, poursuivez.");
 		}
 	</script>
 	<!-- regarde jQuesry ui pour faire un pop up, etes-vous sure ? -->
@@ -80,7 +80,7 @@
 			<br>
 			<br>
 			<br>
-			<form id="formulaire" action="accueil.php" method = "post" onsubmit="return ConfirmTest">
+			<form id="formulaire" action="accueil.php" method = "post">
 				<div>
 
 					<?php
@@ -119,6 +119,15 @@
 					
 				</div>
 			</form>
+			<?php
+				if ($_SESSION['SF'] == true and $_SESSION['alim'] == true and $_SESSION['epices'] == true) {
+			?>
+				<form id="fini" action="fichier.php" method="post">
+					<input type="submit" name="fin" value="Enregistrer les données et finir" class="mui-btn mui-btn--large mui-btn--raised 	mui-btn--danger">
+				</form>
+			<?php 
+				}
+			?>
 		</div>
 		<!-- Afficher des trucs pour décrire un peu chaque test ? -->
 	</body>

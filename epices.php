@@ -569,7 +569,7 @@
 			?>
 			<form id="formulaire" action="accueil.php" method = "post">
 				<div align="center">
-					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Changer de questionnaire"/>
+					<input class="mui-btn mui-btn--large mui-btn--raised mui-btn--primary" type="submit" value="Revenir à l'accueil"/>
 				</div>
 			</form>
 			<?php 
