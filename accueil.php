@@ -56,7 +56,7 @@
 		</div>
 		<div class="mui-appbar">
 			<div align="center">
-				<table width="100%">
+				<table width="100%"  height="142px">
 					<tr style="vertical-align:middle;">
 						<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Etude LIVANUT</td>
 					</tr>
@@ -64,6 +64,18 @@
 			</div>
 		</div>
 		<div align="center">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
 			<br>
 			<br>
 			<br>
@@ -78,6 +90,12 @@
 			<br>
 			<br>
 			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+
 			<br>
 			<br>
 			<form id="formulaire" action="accueil.php" method = "post">

@@ -40,7 +40,7 @@
 			</form>
 		</div>
 		<div class="mui-appbar">
-			<table width="100%">
+			<table width="100%"  height="142px">
 				<tr style="vertical-align:middle;">
 					<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire ALIMENTATION</td>
 				</tr>

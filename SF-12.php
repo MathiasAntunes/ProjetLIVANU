@@ -29,7 +29,7 @@
 			</form>
 		</div>
 		<div class="mui-appbar">
-			<table width="100%">
+			<table width="100%"  height="142px">
 				<tr style="vertical-align:middle;">
 					<td class="mui--appbar-height mui--text-light mui--text-display2" align="center">Questionnaire SF-12</td>
 				</tr>
@@ -40,12 +40,16 @@
 				if (!isset($_POST['validation']) or isset($_POST['prec1'])) {// si le bouton de départ a été pressé
 					//$_SESSION['score'] = 75.14;
 			?>
+			<br>
+			<br>
 			<div align="left">
 				<form id="formu" action="accueil.php" method="post">
 					<input class="mui-btn mui-btn--small mui-btn--raised mui-btn--primary" type="submit" value="Retour" name="Prec0SF"/>
 				</form>
 			</div>
 			<div class="mui--text-display2">
+			<br>
+			<br>
 			<br>
 			<br>
 			Question 1 :
