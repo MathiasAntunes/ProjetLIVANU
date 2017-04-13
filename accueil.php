@@ -14,17 +14,6 @@
 	</script>
 	<body>
 		<?php
-			if (isset($_POST['selection'])){
-				if ($_POST['selection'] == "EPICES") {
-					header('Location: epices.php'); 
-				}
-				if ($_POST['selection'] == "SF-12") {
-					header('Location: SF-12.php');
-				}
-				if ($_POST['selection'] == "Alimentation") {
-					header('Location: alim.php'); 
-				}
-			}
 			
 			if (isset($_POST['go'])){
 				$_SESSION['PatDate'][0] = ucfirst(strtolower($_POST['nomP']));
@@ -97,7 +86,7 @@
 
 			<br>
 			<br>
-			<form id="formulaire" action="accueil.php" method = "post">
+			<form id="formulaire" action="choix_questionnaire.php" method = "post">
 				<div>
 
 					<?php
@@ -147,6 +136,5 @@
 				}
 			?>
 		</div>
-		<!-- Afficher des trucs pour décrire un peu chaque test ? -->
 	</body>
 </html>
